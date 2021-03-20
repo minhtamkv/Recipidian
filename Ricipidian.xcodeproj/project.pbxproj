@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7F9E5990EE324F74140B025F /* Pods_Ricipidian.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5233A614655B9AD4EABB4F0C /* Pods_Ricipidian.framework */; };
 		88E592AF2606669F00803C82 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E592AE2606669F00803C82 /* AppDelegate.swift */; };
 		88E592B12606669F00803C82 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E592B02606669F00803C82 /* SceneDelegate.swift */; };
 		88E592B32606669F00803C82 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E592B22606669F00803C82 /* ViewController.swift */; };
@@ -15,6 +16,8 @@
 		88E592BB260666A000803C82 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88E592B9260666A000803C82 /* LaunchScreen.storyboard */; };
 		88E592C6260666A000803C82 /* RicipidianTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E592C5260666A000803C82 /* RicipidianTests.swift */; };
 		88E592D1260666A000803C82 /* RicipidianUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E592D0260666A000803C82 /* RicipidianUITests.swift */; };
+		A58773A988358C313CD29EFB /* Pods_RicipidianTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 546D2D681A52E23E0B2B3049 /* Pods_RicipidianTests.framework */; };
+		ABCB70241832EEC0A074D1A4 /* Pods_Ricipidian_RicipidianUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E02B7D42700FCB1B042243CF /* Pods_Ricipidian_RicipidianUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		276F8D381120CC3F9B11F1EE /* Pods-Ricipidian.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ricipidian.release.xcconfig"; path = "Target Support Files/Pods-Ricipidian/Pods-Ricipidian.release.xcconfig"; sourceTree = "<group>"; };
+		3700833B66D45FDC155DAD41 /* Pods-RicipidianTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RicipidianTests.release.xcconfig"; path = "Target Support Files/Pods-RicipidianTests/Pods-RicipidianTests.release.xcconfig"; sourceTree = "<group>"; };
+		39B22DA1EDDFAE36ECCD28F0 /* Pods-Ricipidian-RicipidianUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ricipidian-RicipidianUITests.release.xcconfig"; path = "Target Support Files/Pods-Ricipidian-RicipidianUITests/Pods-Ricipidian-RicipidianUITests.release.xcconfig"; sourceTree = "<group>"; };
+		5233A614655B9AD4EABB4F0C /* Pods_Ricipidian.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ricipidian.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		546D2D681A52E23E0B2B3049 /* Pods_RicipidianTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RicipidianTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		88E592AB2606669F00803C82 /* Ricipidian.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ricipidian.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88E592AE2606669F00803C82 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		88E592B02606669F00803C82 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +57,10 @@
 		88E592CC260666A000803C82 /* RicipidianUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RicipidianUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		88E592D0260666A000803C82 /* RicipidianUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RicipidianUITests.swift; sourceTree = "<group>"; };
 		88E592D2260666A000803C82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5FE2EBF44FE74FE0186849A /* Pods-Ricipidian-RicipidianUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ricipidian-RicipidianUITests.debug.xcconfig"; path = "Target Support Files/Pods-Ricipidian-RicipidianUITests/Pods-Ricipidian-RicipidianUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		BF3E7D1FDA2DE3F346E9EDDB /* Pods-Ricipidian.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ricipidian.debug.xcconfig"; path = "Target Support Files/Pods-Ricipidian/Pods-Ricipidian.debug.xcconfig"; sourceTree = "<group>"; };
+		E02B7D42700FCB1B042243CF /* Pods_Ricipidian_RicipidianUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ricipidian_RicipidianUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E50D4DD86309993D884560C0 /* Pods-RicipidianTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RicipidianTests.debug.xcconfig"; path = "Target Support Files/Pods-RicipidianTests/Pods-RicipidianTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F9E5990EE324F74140B025F /* Pods_Ricipidian.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A58773A988358C313CD29EFB /* Pods_RicipidianTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABCB70241832EEC0A074D1A4 /* Pods_Ricipidian_RicipidianUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +98,8 @@
 				88E592C4260666A000803C82 /* RicipidianTests */,
 				88E592CF260666A000803C82 /* RicipidianUITests */,
 				88E592AC2606669F00803C82 /* Products */,
+				CAC5069449416E8039FAA3E2 /* Pods */,
+				9E696F06B8894F7782C27168 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,6 +145,30 @@
 			path = RicipidianUITests;
 			sourceTree = "<group>";
 		};
+		9E696F06B8894F7782C27168 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5233A614655B9AD4EABB4F0C /* Pods_Ricipidian.framework */,
+				E02B7D42700FCB1B042243CF /* Pods_Ricipidian_RicipidianUITests.framework */,
+				546D2D681A52E23E0B2B3049 /* Pods_RicipidianTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CAC5069449416E8039FAA3E2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BF3E7D1FDA2DE3F346E9EDDB /* Pods-Ricipidian.debug.xcconfig */,
+				276F8D381120CC3F9B11F1EE /* Pods-Ricipidian.release.xcconfig */,
+				A5FE2EBF44FE74FE0186849A /* Pods-Ricipidian-RicipidianUITests.debug.xcconfig */,
+				39B22DA1EDDFAE36ECCD28F0 /* Pods-Ricipidian-RicipidianUITests.release.xcconfig */,
+				E50D4DD86309993D884560C0 /* Pods-RicipidianTests.debug.xcconfig */,
+				3700833B66D45FDC155DAD41 /* Pods-RicipidianTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,6 +176,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 88E592D5260666A000803C82 /* Build configuration list for PBXNativeTarget "Ricipidian" */;
 			buildPhases = (
+				3DCA5236D65B289B3005180C /* [CP] Check Pods Manifest.lock */,
 				88E592A72606669F00803C82 /* Sources */,
 				88E592A82606669F00803C82 /* Frameworks */,
 				88E592A92606669F00803C82 /* Resources */,
@@ -152,6 +194,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 88E592D8260666A000803C82 /* Build configuration list for PBXNativeTarget "RicipidianTests" */;
 			buildPhases = (
+				58D410CF7E8CC63289ADB35B /* [CP] Check Pods Manifest.lock */,
 				88E592BD260666A000803C82 /* Sources */,
 				88E592BE260666A000803C82 /* Frameworks */,
 				88E592BF260666A000803C82 /* Resources */,
@@ -170,6 +213,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 88E592DB260666A000803C82 /* Build configuration list for PBXNativeTarget "RicipidianUITests" */;
 			buildPhases = (
+				04923B3268A70655CE763FA3 /* [CP] Check Pods Manifest.lock */,
 				88E592C8260666A000803C82 /* Sources */,
 				88E592C9260666A000803C82 /* Frameworks */,
 				88E592CA260666A000803C82 /* Resources */,
@@ -252,6 +296,75 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		04923B3268A70655CE763FA3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Ricipidian-RicipidianUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3DCA5236D65B289B3005180C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Ricipidian-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		58D410CF7E8CC63289ADB35B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RicipidianTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		88E592A72606669F00803C82 /* Sources */ = {
@@ -433,6 +546,7 @@
 		};
 		88E592D6260666A000803C82 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF3E7D1FDA2DE3F346E9EDDB /* Pods-Ricipidian.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -452,6 +566,7 @@
 		};
 		88E592D7260666A000803C82 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 276F8D381120CC3F9B11F1EE /* Pods-Ricipidian.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -471,6 +586,7 @@
 		};
 		88E592D9260666A000803C82 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E50D4DD86309993D884560C0 /* Pods-RicipidianTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -493,6 +609,7 @@
 		};
 		88E592DA260666A000803C82 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3700833B66D45FDC155DAD41 /* Pods-RicipidianTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -515,6 +632,7 @@
 		};
 		88E592DC260666A000803C82 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A5FE2EBF44FE74FE0186849A /* Pods-Ricipidian-RicipidianUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -535,6 +653,7 @@
 		};
 		88E592DD260666A000803C82 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39B22DA1EDDFAE36ECCD28F0 /* Pods-Ricipidian-RicipidianUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

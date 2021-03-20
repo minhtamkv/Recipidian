@@ -1,0 +1,6 @@
+framework module Pods_Ricipidian {
+  umbrella header "Pods-Ricipidian-umbrella.h"
+
+  export *
+  module * { export * }
+}
