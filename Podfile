@@ -9,6 +9,7 @@ target 'Ricipidian' do
   pod 'Localize' , '~> 2.3.0'
   pod 'SwifterSwift'
   pod 'RxAlamofire'
+  pod 'SnapKit', '~> 5.0.0'
 
   # Pods for Ricipidian
 
