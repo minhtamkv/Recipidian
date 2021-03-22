@@ -38,6 +38,8 @@
 		887490E026067E6A004D65BA /* BaseDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887490DF26067E6A004D65BA /* BaseDefine.swift */; };
 		887490EE26067EEC004D65BA /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887490ED26067EEC004D65BA /* BaseService.swift */; };
 		887490F626067F3C004D65BA /* BaseServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887490F526067F3C004D65BA /* BaseServiceManager.swift */; };
+		88D76CA026084C3E007A55DB /* NetworkState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D76C9F26084C3E007A55DB /* NetworkState.swift */; };
+		88D76CA526084C7C007A55DB /* NotifyName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D76CA426084C7C007A55DB /* NotifyName.swift */; };
 		88E592AF2606669F00803C82 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E592AE2606669F00803C82 /* AppDelegate.swift */; };
 		88E592B12606669F00803C82 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E592B02606669F00803C82 /* SceneDelegate.swift */; };
 		88E592B32606669F00803C82 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E592B22606669F00803C82 /* ViewController.swift */; };
@@ -103,6 +105,8 @@
 		887490DF26067E6A004D65BA /* BaseDefine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseDefine.swift; sourceTree = "<group>"; };
 		887490ED26067EEC004D65BA /* BaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
 		887490F526067F3C004D65BA /* BaseServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseServiceManager.swift; sourceTree = "<group>"; };
+		88D76C9F26084C3E007A55DB /* NetworkState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkState.swift; sourceTree = "<group>"; };
+		88D76CA426084C7C007A55DB /* NotifyName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotifyName.swift; sourceTree = "<group>"; };
 		88E592AB2606669F00803C82 /* Ricipidian.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ricipidian.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88E592AE2606669F00803C82 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		88E592B02606669F00803C82 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -170,6 +174,8 @@
 			children = (
 				8874902926066F54004D65BA /* UserDefaultHelper.swift */,
 				887490DF26067E6A004D65BA /* BaseDefine.swift */,
+				88D76C9F26084C3E007A55DB /* NetworkState.swift */,
+				88D76CA426084C7C007A55DB /* NotifyName.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -560,6 +566,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88D76CA026084C3E007A55DB /* NetworkState.swift in Sources */,
 				8874909626067913004D65BA /* UIButton.swift in Sources */,
 				88749077260675E8004D65BA /* UICollectionView.swift in Sources */,
 				887490CC26067D37004D65BA /* DatePickerViewController.swift in Sources */,
@@ -593,6 +600,7 @@
 				887490AF26067AB7004D65BA /* Bundle.swift in Sources */,
 				8874903F2606727C004D65BA /* IBaseCollectionVM.swift in Sources */,
 				88749072260675B4004D65BA /* UITableView.swift in Sources */,
+				88D76CA526084C7C007A55DB /* NotifyName.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
