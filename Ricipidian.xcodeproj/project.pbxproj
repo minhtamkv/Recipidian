@@ -52,6 +52,15 @@
 		88E592BB260666A000803C82 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88E592B9260666A000803C82 /* LaunchScreen.storyboard */; };
 		88E592C6260666A000803C82 /* RicipidianTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E592C5260666A000803C82 /* RicipidianTests.swift */; };
 		88E592D1260666A000803C82 /* RicipidianUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E592D0260666A000803C82 /* RicipidianUITests.swift */; };
+		88FF00502609E677003FB601 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FF004F2609E677003FB601 /* BaseNavigationController.swift */; };
+		88FF00562609E744003FB601 /* CustomESTabBarItemContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FF00552609E744003FB601 /* CustomESTabBarItemContentView.swift */; };
+		88FF005F2609E7EC003FB601 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FF005E2609E7EC003FB601 /* AppCoordinator.swift */; };
+		88FF006C2609EA32003FB601 /* RecipeListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FF006B2609EA32003FB601 /* RecipeListCoordinator.swift */; };
+		88FF00742609EA59003FB601 /* RecipeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FF00732609EA59003FB601 /* RecipeListViewController.swift */; };
+		88FF00792609EE61003FB601 /* CustomTabbarItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FF00782609EE61003FB601 /* CustomTabbarItemView.swift */; };
+		88FFFFAC2609D118003FB601 /* MainTabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FFFFAB2609D118003FB601 /* MainTabbarViewController.swift */; };
+		88FFFFE32609D620003FB601 /* MainTabbarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FFFFE22609D620003FB601 /* MainTabbarCoordinator.swift */; };
+		88FFFFE82609D671003FB601 /* GlobalData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FFFFE72609D671003FB601 /* GlobalData.swift */; };
 		A58773A988358C313CD29EFB /* Pods_RicipidianTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 546D2D681A52E23E0B2B3049 /* Pods_RicipidianTests.framework */; };
 		ABCB70241832EEC0A074D1A4 /* Pods_Ricipidian_RicipidianUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E02B7D42700FCB1B042243CF /* Pods_Ricipidian_RicipidianUITests.framework */; };
 /* End PBXBuildFile section */
@@ -129,6 +138,15 @@
 		88E592CC260666A000803C82 /* RicipidianUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RicipidianUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		88E592D0260666A000803C82 /* RicipidianUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RicipidianUITests.swift; sourceTree = "<group>"; };
 		88E592D2260666A000803C82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88FF004F2609E677003FB601 /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
+		88FF00552609E744003FB601 /* CustomESTabBarItemContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomESTabBarItemContentView.swift; sourceTree = "<group>"; };
+		88FF005E2609E7EC003FB601 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		88FF006B2609EA32003FB601 /* RecipeListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeListCoordinator.swift; sourceTree = "<group>"; };
+		88FF00732609EA59003FB601 /* RecipeListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeListViewController.swift; sourceTree = "<group>"; };
+		88FF00782609EE61003FB601 /* CustomTabbarItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabbarItemView.swift; sourceTree = "<group>"; };
+		88FFFFAB2609D118003FB601 /* MainTabbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabbarViewController.swift; sourceTree = "<group>"; };
+		88FFFFE22609D620003FB601 /* MainTabbarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabbarCoordinator.swift; sourceTree = "<group>"; };
+		88FFFFE72609D671003FB601 /* GlobalData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalData.swift; sourceTree = "<group>"; };
 		A5FE2EBF44FE74FE0186849A /* Pods-Ricipidian-RicipidianUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ricipidian-RicipidianUITests.debug.xcconfig"; path = "Target Support Files/Pods-Ricipidian-RicipidianUITests/Pods-Ricipidian-RicipidianUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		BF3E7D1FDA2DE3F346E9EDDB /* Pods-Ricipidian.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ricipidian.debug.xcconfig"; path = "Target Support Files/Pods-Ricipidian/Pods-Ricipidian.debug.xcconfig"; sourceTree = "<group>"; };
 		E02B7D42700FCB1B042243CF /* Pods_Ricipidian_RicipidianUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ricipidian_RicipidianUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -166,7 +184,9 @@
 		8836053926087AD000A047E0 /* CoreLayer */ = {
 			isa = PBXGroup;
 			children = (
+				88FF00542609E72A003FB601 /* Custom */,
 				8836053A26087AF000A047E0 /* TableViewCommon.swift */,
+				88FFFFE72609D671003FB601 /* GlobalData.swift */,
 			);
 			path = CoreLayer;
 			sourceTree = "<group>";
@@ -273,6 +293,7 @@
 				88D76CAA26084DC0007A55DB /* BaseTableViewCell.swift */,
 				88D76CB226084E3B007A55DB /* BaseViewController.swift */,
 				8836053426087A6700A047E0 /* BaseTableViewController.swift */,
+				88FF004F2609E677003FB601 /* BaseNavigationController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -302,9 +323,10 @@
 		88E592AD2606669F00803C82 /* Ricipidian */ = {
 			isa = PBXGroup;
 			children = (
+				88FF005D2609E7DB003FB601 /* AppDelegate */,
+				88FFFFA62609D09A003FB601 /* Module */,
 				8836053926087AD000A047E0 /* CoreLayer */,
 				8874902426066EED004D65BA /* BaseMVVMc */,
-				88E592AE2606669F00803C82 /* AppDelegate.swift */,
 				88E592B02606669F00803C82 /* SceneDelegate.swift */,
 				88E592B22606669F00803C82 /* ViewController.swift */,
 				88E592B42606669F00803C82 /* Main.storyboard */,
@@ -331,6 +353,100 @@
 				88E592D2260666A000803C82 /* Info.plist */,
 			);
 			path = RicipidianUITests;
+			sourceTree = "<group>";
+		};
+		88FF00542609E72A003FB601 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				88FF00552609E744003FB601 /* CustomESTabBarItemContentView.swift */,
+				88FF00782609EE61003FB601 /* CustomTabbarItemView.swift */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
+		88FF005D2609E7DB003FB601 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				88E592AE2606669F00803C82 /* AppDelegate.swift */,
+				88FF005E2609E7EC003FB601 /* AppCoordinator.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		88FF00662609E955003FB601 /* ListRecipe */ = {
+			isa = PBXGroup;
+			children = (
+				88FF00692609E970003FB601 /* Coordinator */,
+				88FF00682609E965003FB601 /* ViewModel */,
+				88FF00672609E961003FB601 /* View */,
+			);
+			path = ListRecipe;
+			sourceTree = "<group>";
+		};
+		88FF00672609E961003FB601 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				88FF006A2609E977003FB601 /* CustomCell */,
+				88FF00732609EA59003FB601 /* RecipeListViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		88FF00682609E965003FB601 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		88FF00692609E970003FB601 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				88FF006B2609EA32003FB601 /* RecipeListCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		88FF006A2609E977003FB601 /* CustomCell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CustomCell;
+			sourceTree = "<group>";
+		};
+		88FFFFA62609D09A003FB601 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				88FF00662609E955003FB601 /* ListRecipe */,
+				88FFFFA72609D0AB003FB601 /* MainTabbar */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		88FFFFA72609D0AB003FB601 /* MainTabbar */ = {
+			isa = PBXGroup;
+			children = (
+				88FFFFAA2609D0C4003FB601 /* Coordinator */,
+				88FFFFA82609D0B9003FB601 /* View */,
+			);
+			path = MainTabbar;
+			sourceTree = "<group>";
+		};
+		88FFFFA82609D0B9003FB601 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				88FFFFAB2609D118003FB601 /* MainTabbarViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		88FFFFAA2609D0C4003FB601 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				88FFFFE22609D620003FB601 /* MainTabbarCoordinator.swift */,
+			);
+			name = Coordinator;
+			path = "Coordinatỏ";
 			sourceTree = "<group>";
 		};
 		9E696F06B8894F7782C27168 /* Frameworks */ = {
@@ -367,7 +483,6 @@
 				88E592A72606669F00803C82 /* Sources */,
 				88E592A82606669F00803C82 /* Frameworks */,
 				88E592A92606669F00803C82 /* Resources */,
-				726AC970C7A8BA1437831FB0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -405,7 +520,6 @@
 				88E592C8260666A000803C82 /* Sources */,
 				88E592C9260666A000803C82 /* Frameworks */,
 				88E592CA260666A000803C82 /* Resources */,
-				B488B976C607EA35ACA3A067 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -553,40 +667,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		726AC970C7A8BA1437831FB0 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Ricipidian/Pods-Ricipidian-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Ricipidian/Pods-Ricipidian-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Ricipidian/Pods-Ricipidian-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B488B976C607EA35ACA3A067 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Ricipidian-RicipidianUITests/Pods-Ricipidian-RicipidianUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Ricipidian-RicipidianUITests/Pods-Ricipidian-RicipidianUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Ricipidian-RicipidianUITests/Pods-Ricipidian-RicipidianUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -600,9 +680,11 @@
 				887490CC26067D37004D65BA /* DatePickerViewController.swift in Sources */,
 				88D76CAB26084DC0007A55DB /* BaseTableViewCell.swift in Sources */,
 				88E592B32606669F00803C82 /* ViewController.swift in Sources */,
+				88FF00562609E744003FB601 /* CustomESTabBarItemContentView.swift in Sources */,
 				887490DB26067E01004D65BA /* UIAlertController.swift in Sources */,
 				887490512606731A004D65BA /* BaseCollectionVM.swift in Sources */,
 				8836053526087A6700A047E0 /* BaseTableViewController.swift in Sources */,
+				88FFFFAC2609D118003FB601 /* MainTabbarViewController.swift in Sources */,
 				8874907C26067690004D65BA /* UITextField.swift in Sources */,
 				887490C726067C88004D65BA /* CustomCollectionView.swift in Sources */,
 				887490E026067E6A004D65BA /* BaseDefine.swift in Sources */,
@@ -611,26 +693,33 @@
 				887490572606739C004D65BA /* RowViewModel.swift in Sources */,
 				8874904C260672F9004D65BA /* SectionViewModel.swift in Sources */,
 				88749039260670CD004D65BA /* Coordinator.swift in Sources */,
+				88FFFFE82609D671003FB601 /* GlobalData.swift in Sources */,
 				887490D626067DC4004D65BA /* IPopupDialogView.swift in Sources */,
 				887490B426067B27004D65BA /* RxSwiftExtenstion.swift in Sources */,
 				88749047260672CB004D65BA /* BaseViewModel.swift in Sources */,
 				887490AA26067A55004D65BA /* UIView.swift in Sources */,
+				88FFFFE32609D620003FB601 /* MainTabbarCoordinator.swift in Sources */,
 				887490A0260679EE004D65BA /* UISearchBar.swift in Sources */,
 				8874902A26066F54004D65BA /* UserDefaultHelper.swift in Sources */,
 				887490BA26067C10004D65BA /* CustomTableView.swift in Sources */,
+				88FF006C2609EA32003FB601 /* RecipeListCoordinator.swift in Sources */,
 				887490D126067D85004D65BA /* PopupDialogCustom.swift in Sources */,
 				887490C226067C4D004D65BA /* CellConfigurable.swift in Sources */,
 				88749064260673E0004D65BA /* BaseRequest.swift in Sources */,
+				88FF00742609EA59003FB601 /* RecipeListViewController.swift in Sources */,
 				8874906A260674C3004D65BA /* Logger.swift in Sources */,
 				887490EE26067EEC004D65BA /* BaseService.swift in Sources */,
 				8836053B26087AF000A047E0 /* TableViewCommon.swift in Sources */,
 				887490A526067A27004D65BA /* UIViewController.swift in Sources */,
 				8874909B260679B4004D65BA /* UITextView.swift in Sources */,
+				88FF00792609EE61003FB601 /* CustomTabbarItemView.swift in Sources */,
 				88E592B12606669F00803C82 /* SceneDelegate.swift in Sources */,
+				88FF00502609E677003FB601 /* BaseNavigationController.swift in Sources */,
 				8874905F260673BC004D65BA /* BaseResponse.swift in Sources */,
 				887490F626067F3C004D65BA /* BaseServiceManager.swift in Sources */,
 				887490AF26067AB7004D65BA /* Bundle.swift in Sources */,
 				8874903F2606727C004D65BA /* IBaseCollectionVM.swift in Sources */,
+				88FF005F2609E7EC003FB601 /* AppCoordinator.swift in Sources */,
 				88749072260675B4004D65BA /* UITableView.swift in Sources */,
 				88D76CA526084C7C007A55DB /* NotifyName.swift in Sources */,
 			);
@@ -812,6 +901,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MQ2RMD93K4;
 				INFOPLIST_FILE = Ricipidian/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -832,6 +922,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MQ2RMD93K4;
 				INFOPLIST_FILE = Ricipidian/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
