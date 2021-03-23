@@ -11,7 +11,7 @@ target 'Ricipidian' do
   pod 'RxAlamofire'
   pod 'SnapKit', '~> 5.0.0'
 #  pod "RxRealm"
-#  pod "ESTabBarController-swift"
+  pod "ESTabBarController-swift"
   # Pods for Ricipidian
 
   target 'RicipidianTests' do
