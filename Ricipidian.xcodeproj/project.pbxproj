@@ -323,7 +323,7 @@
 		88E592AD2606669F00803C82 /* Ricipidian */ = {
 			isa = PBXGroup;
 			children = (
-				88FF005D2609E7DB003FB601 /* AppDelegate */,
+				88FF005D2609E7DB003FB601 /* Application */,
 				88FFFFA62609D09A003FB601 /* Module */,
 				8836053926087AD000A047E0 /* CoreLayer */,
 				8874902426066EED004D65BA /* BaseMVVMc */,
@@ -364,13 +364,13 @@
 			path = Custom;
 			sourceTree = "<group>";
 		};
-		88FF005D2609E7DB003FB601 /* AppDelegate */ = {
+		88FF005D2609E7DB003FB601 /* Application */ = {
 			isa = PBXGroup;
 			children = (
 				88E592AE2606669F00803C82 /* AppDelegate.swift */,
 				88FF005E2609E7EC003FB601 /* AppCoordinator.swift */,
 			);
-			path = AppDelegate;
+			path = Application;
 			sourceTree = "<group>";
 		};
 		88FF00662609E955003FB601 /* ListRecipe */ = {
