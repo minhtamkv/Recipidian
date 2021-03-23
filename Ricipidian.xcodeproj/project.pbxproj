@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		7F9E5990EE324F74140B025F /* Pods_Ricipidian.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5233A614655B9AD4EABB4F0C /* Pods_Ricipidian.framework */; };
+		8836053526087A6700A047E0 /* BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8836053426087A6700A047E0 /* BaseTableViewController.swift */; };
+		8836053B26087AF000A047E0 /* TableViewCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8836053A26087AF000A047E0 /* TableViewCommon.swift */; };
 		8874902A26066F54004D65BA /* UserDefaultHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8874902926066F54004D65BA /* UserDefaultHelper.swift */; };
 		88749039260670CD004D65BA /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88749038260670CD004D65BA /* Coordinator.swift */; };
 		8874903F2606727C004D65BA /* IBaseCollectionVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8874903E2606727C004D65BA /* IBaseCollectionVM.swift */; };
@@ -40,6 +42,8 @@
 		887490F626067F3C004D65BA /* BaseServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887490F526067F3C004D65BA /* BaseServiceManager.swift */; };
 		88D76CA026084C3E007A55DB /* NetworkState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D76C9F26084C3E007A55DB /* NetworkState.swift */; };
 		88D76CA526084C7C007A55DB /* NotifyName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D76CA426084C7C007A55DB /* NotifyName.swift */; };
+		88D76CAB26084DC0007A55DB /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D76CAA26084DC0007A55DB /* BaseTableViewCell.swift */; };
+		88D76CB326084E3B007A55DB /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D76CB226084E3B007A55DB /* BaseViewController.swift */; };
 		88E592AF2606669F00803C82 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E592AE2606669F00803C82 /* AppDelegate.swift */; };
 		88E592B12606669F00803C82 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E592B02606669F00803C82 /* SceneDelegate.swift */; };
 		88E592B32606669F00803C82 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E592B22606669F00803C82 /* ViewController.swift */; };
@@ -75,6 +79,8 @@
 		39B22DA1EDDFAE36ECCD28F0 /* Pods-Ricipidian-RicipidianUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ricipidian-RicipidianUITests.release.xcconfig"; path = "Target Support Files/Pods-Ricipidian-RicipidianUITests/Pods-Ricipidian-RicipidianUITests.release.xcconfig"; sourceTree = "<group>"; };
 		5233A614655B9AD4EABB4F0C /* Pods_Ricipidian.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ricipidian.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		546D2D681A52E23E0B2B3049 /* Pods_RicipidianTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RicipidianTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8836053426087A6700A047E0 /* BaseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewController.swift; sourceTree = "<group>"; };
+		8836053A26087AF000A047E0 /* TableViewCommon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCommon.swift; sourceTree = "<group>"; };
 		8874902926066F54004D65BA /* UserDefaultHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultHelper.swift; sourceTree = "<group>"; };
 		88749038260670CD004D65BA /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		8874903E2606727C004D65BA /* IBaseCollectionVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBaseCollectionVM.swift; sourceTree = "<group>"; };
@@ -107,6 +113,8 @@
 		887490F526067F3C004D65BA /* BaseServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseServiceManager.swift; sourceTree = "<group>"; };
 		88D76C9F26084C3E007A55DB /* NetworkState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkState.swift; sourceTree = "<group>"; };
 		88D76CA426084C7C007A55DB /* NotifyName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotifyName.swift; sourceTree = "<group>"; };
+		88D76CAA26084DC0007A55DB /* BaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
+		88D76CB226084E3B007A55DB /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		88E592AB2606669F00803C82 /* Ricipidian.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ricipidian.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88E592AE2606669F00803C82 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		88E592B02606669F00803C82 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -155,9 +163,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8836053926087AD000A047E0 /* CoreLayer */ = {
+			isa = PBXGroup;
+			children = (
+				8836053A26087AF000A047E0 /* TableViewCommon.swift */,
+			);
+			path = CoreLayer;
+			sourceTree = "<group>";
+		};
 		8874902426066EED004D65BA /* BaseMVVMc */ = {
 			isa = PBXGroup;
 			children = (
+				88D76CA926084D57007A55DB /* View */,
 				887490EC26067EDA004D65BA /* Service */,
 				887490B826067C02004D65BA /* Custom */,
 				88749068260674AE004D65BA /* Extension */,
@@ -250,6 +267,16 @@
 			path = Service;
 			sourceTree = "<group>";
 		};
+		88D76CA926084D57007A55DB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				88D76CAA26084DC0007A55DB /* BaseTableViewCell.swift */,
+				88D76CB226084E3B007A55DB /* BaseViewController.swift */,
+				8836053426087A6700A047E0 /* BaseTableViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		88E592A22606669F00803C82 = {
 			isa = PBXGroup;
 			children = (
@@ -275,6 +302,7 @@
 		88E592AD2606669F00803C82 /* Ricipidian */ = {
 			isa = PBXGroup;
 			children = (
+				8836053926087AD000A047E0 /* CoreLayer */,
 				8874902426066EED004D65BA /* BaseMVVMc */,
 				88E592AE2606669F00803C82 /* AppDelegate.swift */,
 				88E592B02606669F00803C82 /* SceneDelegate.swift */,
@@ -570,12 +598,15 @@
 				8874909626067913004D65BA /* UIButton.swift in Sources */,
 				88749077260675E8004D65BA /* UICollectionView.swift in Sources */,
 				887490CC26067D37004D65BA /* DatePickerViewController.swift in Sources */,
+				88D76CAB26084DC0007A55DB /* BaseTableViewCell.swift in Sources */,
 				88E592B32606669F00803C82 /* ViewController.swift in Sources */,
 				887490DB26067E01004D65BA /* UIAlertController.swift in Sources */,
 				887490512606731A004D65BA /* BaseCollectionVM.swift in Sources */,
+				8836053526087A6700A047E0 /* BaseTableViewController.swift in Sources */,
 				8874907C26067690004D65BA /* UITextField.swift in Sources */,
 				887490C726067C88004D65BA /* CustomCollectionView.swift in Sources */,
 				887490E026067E6A004D65BA /* BaseDefine.swift in Sources */,
+				88D76CB326084E3B007A55DB /* BaseViewController.swift in Sources */,
 				88E592AF2606669F00803C82 /* AppDelegate.swift in Sources */,
 				887490572606739C004D65BA /* RowViewModel.swift in Sources */,
 				8874904C260672F9004D65BA /* SectionViewModel.swift in Sources */,
@@ -592,6 +623,7 @@
 				88749064260673E0004D65BA /* BaseRequest.swift in Sources */,
 				8874906A260674C3004D65BA /* Logger.swift in Sources */,
 				887490EE26067EEC004D65BA /* BaseService.swift in Sources */,
+				8836053B26087AF000A047E0 /* TableViewCommon.swift in Sources */,
 				887490A526067A27004D65BA /* UIViewController.swift in Sources */,
 				8874909B260679B4004D65BA /* UITextView.swift in Sources */,
 				88E592B12606669F00803C82 /* SceneDelegate.swift in Sources */,
