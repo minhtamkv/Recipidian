@@ -1,4 +1,5 @@
 PODS:
+  - Localize (2.3.0)
   - RxCocoa (6.1.0):
     - RxRelay (= 6.1.0)
     - RxSwift (= 6.1.0)
@@ -7,20 +8,23 @@ PODS:
   - RxSwift (6.1.0)
 
 DEPENDENCIES:
+  - Localize (~> 2.3.0)
   - RxCocoa (= 6.1.0)
   - RxSwift (= 6.1.0)
 
 SPEC REPOS:
   trunk:
+    - Localize
     - RxCocoa
     - RxRelay
     - RxSwift
 
 SPEC CHECKSUMS:
+  Localize: cb1ae53ed73decaad0dce217806ed983091913f5
   RxCocoa: 5c51f02d562cbd94629f6c26cf0c80fe4ab8d343
   RxRelay: 483e1a19fad961b41f0b0c0bee506f46c1ae14fe
   RxSwift: a834e5c538e89eca0cae86f403f4fbf0336786ce
 
-PODFILE CHECKSUM: 0b3fb7ec58a8b023f8292b74ce0fb83a2aa6473b
+PODFILE CHECKSUM: 7a2d52013ee555b0b6bcf84e48f0662c58cf9e94
 
 COCOAPODS: 1.10.1
