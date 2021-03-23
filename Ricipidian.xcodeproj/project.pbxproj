@@ -373,14 +373,14 @@
 			path = Application;
 			sourceTree = "<group>";
 		};
-		88FF00662609E955003FB601 /* ListRecipe */ = {
+		88FF00662609E955003FB601 /* RecipeList */ = {
 			isa = PBXGroup;
 			children = (
 				88FF00692609E970003FB601 /* Coordinator */,
 				88FF00682609E965003FB601 /* ViewModel */,
 				88FF00672609E961003FB601 /* View */,
 			);
-			path = ListRecipe;
+			path = RecipeList;
 			sourceTree = "<group>";
 		};
 		88FF00672609E961003FB601 /* View */ = {
@@ -417,7 +417,7 @@
 		88FFFFA62609D09A003FB601 /* Module */ = {
 			isa = PBXGroup;
 			children = (
-				88FF00662609E955003FB601 /* ListRecipe */,
+				88FF00662609E955003FB601 /* RecipeList */,
 				88FFFFA72609D0AB003FB601 /* MainTabbar */,
 			);
 			path = Module;
