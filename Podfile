@@ -8,7 +8,7 @@ target 'Ricipidian' do
   pod 'RxCocoa', '6.1.0'
   pod 'Localize' , '~> 2.3.0'
   pod 'SwifterSwift'
-#  pod 'RxAlamofire'
+  pod 'RxAlamofire'
 #  pod 'SnapKit', '~> 5.0.0'
 #  pod "RxRealm"
 #  pod "ESTabBarController-swift"
