@@ -13,6 +13,7 @@ target 'Ricipidian' do
   pod "RxRealm"
   pod "ESTabBarController-swift"
   pod 'IQKeyboardManagerSwift'
+  pod 'MaterialComponents/TextControls+FilledTextFields'
   # Pods for Ricipidian
 
   target 'RicipidianTests' do

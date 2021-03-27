@@ -9,11 +9,11 @@ import RxCocoa
 import RxSwift
 import UIKit
 
-class AddRecipeViewController: BaseTableViewController {
+class AddRecipeViewController: BaseViewController {
+    @IBOutlet weak var tableView: AddRecipeTableView!
     var viewModel: AddRecipeViewModelProtocol!
 
     override func viewDidLoad() {
-        tableView.setClassOwnerNew(classNew: AddRecipeTableView.self)
         super.viewDidLoad()
         viewModel.viewDidLoad.accept(())
     }

@@ -24,8 +24,8 @@ class AddRecipeViewModel: BaseCollectionVM, AddRecipeViewModelProtocol {
 
     func initData() {
         resetData()
-        let row = AddRecipe1TableViewCellViewModel()
-        addRow(rowViewModel: row)
+        let row1 = AddRecipe1TableViewCellViewModel()
+        addRow(rowViewModel: row1)
         updateView()
     }
 }

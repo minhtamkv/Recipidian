@@ -52,12 +52,13 @@
 		88D17FF7260F53AF005C032C /* AddRecipe1TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D17FF5260F53AF005C032C /* AddRecipe1TableViewCell.swift */; };
 		88D17FF8260F53AF005C032C /* AddRecipe1TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88D17FF6260F53AF005C032C /* AddRecipe1TableViewCell.xib */; };
 		88D18000260F53CA005C032C /* AddRecipe1TableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D17FFF260F53CA005C032C /* AddRecipe1TableViewCellViewModel.swift */; };
-		88D18005260F5852005C032C /* AddRecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D18004260F5852005C032C /* AddRecipeViewController.swift */; };
 		88D1800A260F585F005C032C /* AddRecipeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D18009260F585F005C032C /* AddRecipeViewModel.swift */; };
 		88D18014260F587B005C032C /* AddRecipeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D18013260F587B005C032C /* AddRecipeCoordinator.swift */; };
 		88D1801C260F598C005C032C /* AddRecipeTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D1801B260F598C005C032C /* AddRecipeTableView.swift */; };
 		88D18025260F5B06005C032C /* AddRecipeViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D18024260F5B06005C032C /* AddRecipeViewModelProtocol.swift */; };
 		88D1802A260F5B97005C032C /* AddRecipeCoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D18029260F5B97005C032C /* AddRecipeCoordinatorProtocol.swift */; };
+		88D5BED0260F98AC0074C1EF /* AddRecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D5BECE260F98AB0074C1EF /* AddRecipeViewController.swift */; };
+		88D5BED1260F98AC0074C1EF /* AddRecipeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88D5BECF260F98AB0074C1EF /* AddRecipeViewController.xib */; };
 		88D76CA026084C3E007A55DB /* NetworkState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D76C9F26084C3E007A55DB /* NetworkState.swift */; };
 		88D76CA526084C7C007A55DB /* NotifyName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D76CA426084C7C007A55DB /* NotifyName.swift */; };
 		88D76CAB26084DC0007A55DB /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D76CAA26084DC0007A55DB /* BaseTableViewCell.swift */; };
@@ -154,12 +155,13 @@
 		88D17FF5260F53AF005C032C /* AddRecipe1TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRecipe1TableViewCell.swift; sourceTree = "<group>"; };
 		88D17FF6260F53AF005C032C /* AddRecipe1TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddRecipe1TableViewCell.xib; sourceTree = "<group>"; };
 		88D17FFF260F53CA005C032C /* AddRecipe1TableViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRecipe1TableViewCellViewModel.swift; sourceTree = "<group>"; };
-		88D18004260F5852005C032C /* AddRecipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRecipeViewController.swift; sourceTree = "<group>"; };
 		88D18009260F585F005C032C /* AddRecipeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRecipeViewModel.swift; sourceTree = "<group>"; };
 		88D18013260F587B005C032C /* AddRecipeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRecipeCoordinator.swift; sourceTree = "<group>"; };
 		88D1801B260F598C005C032C /* AddRecipeTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRecipeTableView.swift; sourceTree = "<group>"; };
 		88D18024260F5B06005C032C /* AddRecipeViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRecipeViewModelProtocol.swift; sourceTree = "<group>"; };
 		88D18029260F5B97005C032C /* AddRecipeCoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRecipeCoordinatorProtocol.swift; sourceTree = "<group>"; };
+		88D5BECE260F98AB0074C1EF /* AddRecipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRecipeViewController.swift; sourceTree = "<group>"; };
+		88D5BECF260F98AB0074C1EF /* AddRecipeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddRecipeViewController.xib; sourceTree = "<group>"; };
 		88D76C9F26084C3E007A55DB /* NetworkState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkState.swift; sourceTree = "<group>"; };
 		88D76CA426084C7C007A55DB /* NotifyName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotifyName.swift; sourceTree = "<group>"; };
 		88D76CAA26084DC0007A55DB /* BaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
@@ -405,7 +407,8 @@
 			children = (
 				88D18020260F599D005C032C /* CustomTableView */,
 				88D17FF4260F50C1005C032C /* CustomCell */,
-				88D18004260F5852005C032C /* AddRecipeViewController.swift */,
+				88D5BECE260F98AB0074C1EF /* AddRecipeViewController.swift */,
+				88D5BECF260F98AB0074C1EF /* AddRecipeViewController.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -431,9 +434,8 @@
 		88D17FF4260F50C1005C032C /* CustomCell */ = {
 			isa = PBXGroup;
 			children = (
-				88D17FF5260F53AF005C032C /* AddRecipe1TableViewCell.swift */,
-				88D17FF6260F53AF005C032C /* AddRecipe1TableViewCell.xib */,
-				88D17FFF260F53CA005C032C /* AddRecipe1TableViewCellViewModel.swift */,
+				88D5BED8260F9A620074C1EF /* AddRecipe2TableViewCell */,
+				88D5BEBC260F8BA50074C1EF /* AddRecipe1TableViewCell */,
 			);
 			path = CustomCell;
 			sourceTree = "<group>";
@@ -444,6 +446,23 @@
 				88D1801B260F598C005C032C /* AddRecipeTableView.swift */,
 			);
 			path = CustomTableView;
+			sourceTree = "<group>";
+		};
+		88D5BEBC260F8BA50074C1EF /* AddRecipe1TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				88D17FF5260F53AF005C032C /* AddRecipe1TableViewCell.swift */,
+				88D17FF6260F53AF005C032C /* AddRecipe1TableViewCell.xib */,
+				88D17FFF260F53CA005C032C /* AddRecipe1TableViewCellViewModel.swift */,
+			);
+			path = AddRecipe1TableViewCell;
+			sourceTree = "<group>";
+		};
+		88D5BED8260F9A620074C1EF /* AddRecipe2TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AddRecipe2TableViewCell;
 			sourceTree = "<group>";
 		};
 		88D76CA926084D57007A55DB /* View */ = {
@@ -762,6 +781,7 @@
 				8894BE88260A532F00BEF8FA /* RecipeListViewController.xib in Resources */,
 				88C588BF260AD57A00181C3C /* RecipeListTableViewCell.xib in Resources */,
 				88D17FD8260F4463005C032C /* RecipeGroupListTableViewCell.xib in Resources */,
+				88D5BED1260F98AC0074C1EF /* AddRecipeViewController.xib in Resources */,
 				88E592BB260666A000803C82 /* LaunchScreen.storyboard in Resources */,
 				88E592B8260666A000803C82 /* Assets.xcassets in Resources */,
 				88E592B62606669F00803C82 /* Main.storyboard in Resources */,
@@ -904,6 +924,7 @@
 				88D17FEC260F4E6E005C032C /* User.swift in Sources */,
 				887490DB26067E01004D65BA /* UIAlertController.swift in Sources */,
 				88F461DE260C759100A4397E /* RecipeListViewModelProtocol.swift in Sources */,
+				88D5BED0260F98AC0074C1EF /* AddRecipeViewController.swift in Sources */,
 				887490512606731A004D65BA /* BaseCollectionVM.swift in Sources */,
 				8836053526087A6700A047E0 /* BaseTableViewController.swift in Sources */,
 				88FFFFAC2609D118003FB601 /* MainTabbarViewController.swift in Sources */,
@@ -911,7 +932,6 @@
 				887490C726067C88004D65BA /* CustomCollectionView.swift in Sources */,
 				887490E026067E6A004D65BA /* BaseDefine.swift in Sources */,
 				88F461D4260C73F400A4397E /* RecipeListViewModel.swift in Sources */,
-				88D18005260F5852005C032C /* AddRecipeViewController.swift in Sources */,
 				88D76CB326084E3B007A55DB /* BaseViewController.swift in Sources */,
 				88E592AF2606669F00803C82 /* AppDelegate.swift in Sources */,
 				887490572606739C004D65BA /* RowViewModel.swift in Sources */,

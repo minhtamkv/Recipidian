@@ -13,10 +13,8 @@ class AddRecipeCoordinator: BaseCoordinator, AddRecipeCoordinatorProtocol {
     override func start() {
         let viewController = AddRecipeViewController()
         let viewModel: AddRecipeViewModelProtocol = AddRecipeViewModel(coordinator: self)
-        navigation.title = "Add Recipe"
         viewController.viewModel = viewModel
-        let navigationController = UINavigationController(rootViewController: viewController)
-        navigation.present(navigationController, animated: true)
+        navigation.present(viewController, animated: true)
     }
 }
 
