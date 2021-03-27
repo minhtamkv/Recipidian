@@ -11,7 +11,7 @@ import UIKit
 
 class RecipeListViewController: BaseViewController {
     @IBOutlet var tableView: RecipeListTableView!
-    @IBOutlet weak var addRecipeButton: UIButton!
+    @IBOutlet var addRecipeButton: UIButton!
     var viewModel: RecipeListViewModelProtocol!
 
     override func viewDidLoad() {
@@ -28,6 +28,7 @@ class RecipeListViewController: BaseViewController {
         super.bindViewModel()
         subscribeCommon(viewModel: viewModel)
     }
+
     override func bindViews() {
         super.bindViews()
         addRecipeButton.bindToWithTapAction(viewModel.showAddRecipe).disposed(by: disposeBag)

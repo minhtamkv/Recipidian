@@ -12,6 +12,7 @@ target 'Ricipidian' do
   pod 'SnapKit', '~> 5.0.0'
   pod "RxRealm"
   pod "ESTabBarController-swift"
+  pod 'IQKeyboardManagerSwift'
   # Pods for Ricipidian
 
   target 'RicipidianTests' do

@@ -5,6 +5,7 @@
 //  Created by Minh Tâm on 21/03/2021.
 //
 
+import IQKeyboardManagerSwift
 import UIKit
 
 @main
@@ -16,6 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         GlobalData.shared.window = window
         appCoordinator = AppCoordinator(window: window)
         appCoordinator?.start()
+        setupIQKeyboardManager()
         // Override point for customization after application launch.
         return true
     }
@@ -32,5 +34,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the user discards a scene session.
         // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
+    }
+}
+
+extension AppDelegate {
+    private func setupIQKeyboardManager() {
+        IQKeyboardManager.shared.enable = true
+        IQKeyboardManager.shared.previousNextDisplayMode = IQPreviousNextDisplayMode.alwaysShow
+        IQKeyboardManager.shared.enableAutoToolbar = true
+        IQKeyboardManager.shared.shouldResignOnTouchOutside = true
+        IQKeyboardManager.shared.shouldShowToolbarPlaceholder = true
+        IQKeyboardManager.shared.toolbarTintColor = .blue
+        IQKeyboardManager.shared.toolbarDoneBarButtonItemText = "Done".localized
+
+        // IQKeyboardManager.shared().toolbarPreviousNextAllowedClasses.add(UIStackView.self)
+        //  IQKeyboardManager.shared().toolbarPreviousNextAllowedClasses.add(UIView.self)
     }
 }

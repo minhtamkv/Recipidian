@@ -13,9 +13,10 @@ class AddRecipeCoordinator: BaseCoordinator, AddRecipeCoordinatorProtocol {
     override func start() {
         let viewController = AddRecipeViewController()
         let viewModel: AddRecipeViewModelProtocol = AddRecipeViewModel(coordinator: self)
-        navigation.isNavigationBarHidden = true
+        navigation.title = "Add Recipe"
         viewController.viewModel = viewModel
-        navigation.present(viewController, animated: true)
+        let navigationController = UINavigationController(rootViewController: viewController)
+        navigation.present(navigationController, animated: true)
     }
 }
 

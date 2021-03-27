@@ -20,6 +20,7 @@ class AddRecipeViewController: BaseTableViewController {
 
     override func setupView() {
         tableView.setViewModel(viewModel: viewModel)
+        title = "Add Recipe"
     }
 
     override func bindViewModel() {
