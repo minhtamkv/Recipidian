@@ -18,12 +18,9 @@ class MainTabBarCoordinator: BaseCoordinator {
         navigation = BaseNavigationController(rootViewController: tabBarController)
 
         let homeNavigation = initTabHome()
-        let home2Navigation = initTabHome2()
-        let home3Navigation = initTabHome3()
-        let home4Navigation = initTabHome4()
-        let home5Navigation = initTabHome5()
+        let hom2 = initTabHome2()
 
-        tabBarController.viewControllers = [homeNavigation, home2Navigation, home3Navigation, home4Navigation, home5Navigation]
+        tabBarController.viewControllers = [homeNavigation, hom2]
 
         tabBarController.modalPresentationStyle = .overFullScreen
     }
@@ -32,7 +29,7 @@ class MainTabBarCoordinator: BaseCoordinator {
         let navigation = BaseNavigationController()
         navigation.tabBarItem = ESTabBarItem(CustomTabbarItemView(), title: "Trang chủ", image: UIImage(named: "home"), selectedImage: UIImage(named: "home_1"), tag: 0)
 
-        let coordinator: IRecipeListCoordinator = RecipeListCoordinator(navigation)
+        let coordinator: RecipeListCoordinatorProtocol = RecipeListCoordinator(navigation)
         coordinate(to: coordinator)
 
         return navigation
@@ -42,41 +39,12 @@ class MainTabBarCoordinator: BaseCoordinator {
         let navigation = BaseNavigationController()
         navigation.tabBarItem = ESTabBarItem(CustomTabbarItemView(), title: "Trang chủ", image: UIImage(named: "home"), selectedImage: UIImage(named: "home_1"), tag: 0)
 
-        let coordinator: IRecipeListCoordinator = RecipeListCoordinator(navigation)
+        let coordinator: RecipeListCoordinatorProtocol = RecipeListCoordinator(navigation)
         coordinate(to: coordinator)
 
         return navigation
     }
 
-    private func initTabHome3() -> BaseNavigationController {
-        let navigation = BaseNavigationController()
-        navigation.tabBarItem = ESTabBarItem(CustomTabbarItemView(), title: "Trang chủ", image: UIImage(named: "home"), selectedImage: UIImage(named: "home_1"), tag: 0)
-
-        let coordinator: IRecipeListCoordinator = RecipeListCoordinator(navigation)
-        coordinate(to: coordinator)
-
-        return navigation
-    }
-
-    private func initTabHome4() -> BaseNavigationController {
-        let navigation = BaseNavigationController()
-        navigation.tabBarItem = ESTabBarItem(CustomTabbarItemView(), title: "Trang chủ", image: UIImage(named: "home"), selectedImage: UIImage(named: "home_1"), tag: 0)
-
-        let coordinator: IRecipeListCoordinator = RecipeListCoordinator(navigation)
-        coordinate(to: coordinator)
-
-        return navigation
-    }
-
-    private func initTabHome5() -> BaseNavigationController {
-        let navigation = BaseNavigationController()
-        navigation.tabBarItem = ESTabBarItem(CustomTabbarItemView(), title: "Trang chủ", image: UIImage(named: "home"), selectedImage: UIImage(named: "home_1"), tag: 0)
-
-        let coordinator: IRecipeListCoordinator = RecipeListCoordinator(navigation)
-        coordinate(to: coordinator)
-
-        return navigation
-    }
 }
 
 extension MainTabBarCoordinator: IMainTabBarCoordinator {

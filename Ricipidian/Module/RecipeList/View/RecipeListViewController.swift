@@ -5,30 +5,31 @@
 //  Created by Minh Tâm on 23/03/2021.
 //
 
+import RxCocoa
 import RxSwift
 import UIKit
 
-class RecipeListViewTableView: TableViewCommon {
-    override func setupTableView() {
-        super.setupTableView()
-    }
+class RecipeListViewController: BaseViewController {
+    @IBOutlet var tableView: RecipeListTableView!
+    @IBOutlet weak var addRecipeButton: UIButton!
+    var viewModel: RecipeListViewModelProtocol!
 
-    override func heightHeaderSection() -> CGFloat {
-        return 0
-    }
-}
-
-class RecipeListViewController: BaseTableViewController {
     override func viewDidLoad() {
-        tableView.setClassOwnerNew(classNew: RecipeListViewTableView.self)
         super.viewDidLoad()
+        viewModel.viewDidLoad.accept(())
     }
 
     override func setupView() {
-        navigationItem.title = "Ngày tiêm"
-        tableView.selectionStyle = .none
-        tableView.separatorStyle = .singleLine
-        tabBarItem.title = "Quay lại"
-        view.backgroundColor = UIColor(white: 245.0 / 255.0, alpha: 1.0)
+        super.setupView()
+        tableView.setViewModel(viewModel: viewModel)
+    }
+
+    override func bindViewModel() {
+        super.bindViewModel()
+        subscribeCommon(viewModel: viewModel)
+    }
+    override func bindViews() {
+        super.bindViews()
+        addRecipeButton.bindToWithTapAction(viewModel.showAddRecipe).disposed(by: disposeBag)
     }
 }

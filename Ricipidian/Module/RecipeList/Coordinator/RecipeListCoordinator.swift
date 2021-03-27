@@ -9,15 +9,19 @@ import Foundation
 import RxSwift
 import UIKit
 
-protocol IRecipeListCoordinator: Coordinator {
-}
-
-class RecipeListCoordinator: BaseCoordinator, IRecipeListCoordinator {
+class RecipeListCoordinator: BaseCoordinator, RecipeListCoordinatorProtocol {
     override func start() {
         let vc = RecipeListViewController()
+        let viewModel: RecipeListViewModelProtocol = RecipeListViewModelViewModel(coordinator: self)
+        navigation.isNavigationBarHidden = true
+        vc.viewModel = viewModel
         navigation.pushViewController(vc)
     }
 }
 
 extension RecipeListCoordinator {
+    func showAddRecipe() {
+        let coordinator = AddRecipeCoordinator(navigation)
+        coordinate(to: coordinator)
+    }
 }

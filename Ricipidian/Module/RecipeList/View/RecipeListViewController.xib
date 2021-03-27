@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RecipeListViewController" customModule="Ricipidian" customModuleProvider="target">
+            <connections>
+                <outlet property="addRecipeButton" destination="1Rk-lL-nth" id="oyP-qI-ySC"/>
+                <outlet property="tableView" destination="KdC-Id-EOD" id="Rg9-kD-frE"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JU9-wf-ApJ">
+                    <rect key="frame" x="0.0" y="44" width="414" height="60"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="folder" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="ndD-Bd-LmU">
+                            <rect key="frame" x="8" y="21" width="20" height="17.5"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="FGO-FX-8cG"/>
+                                <constraint firstAttribute="width" constant="20" id="MZz-U2-07I"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pcA-cg-T07">
+                            <rect key="frame" x="33" y="12" width="65" height="36"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <state key="normal" title="Tamnm"/>
+                        </button>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrowtriangle.down.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="hhe-68-Fqp">
+                            <rect key="frame" x="103" y="22" width="20" height="16"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="dOy-mZ-eXL"/>
+                                <constraint firstAttribute="width" constant="20" id="ncd-iR-msu"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="pcA-cg-T07" firstAttribute="leading" secondItem="ndD-Bd-LmU" secondAttribute="trailing" constant="5" id="Aqp-Cu-PsW"/>
+                        <constraint firstAttribute="height" constant="60" id="Fel-St-Pfr"/>
+                        <constraint firstItem="hhe-68-Fqp" firstAttribute="centerY" secondItem="pcA-cg-T07" secondAttribute="centerY" id="L0v-J0-Vyv"/>
+                        <constraint firstItem="ndD-Bd-LmU" firstAttribute="leading" secondItem="JU9-wf-ApJ" secondAttribute="leading" constant="8" id="Lit-EZ-nZO"/>
+                        <constraint firstItem="ndD-Bd-LmU" firstAttribute="centerY" secondItem="JU9-wf-ApJ" secondAttribute="centerY" id="m1W-g9-Rzy"/>
+                        <constraint firstItem="hhe-68-Fqp" firstAttribute="leading" secondItem="pcA-cg-T07" secondAttribute="trailing" constant="5" id="weX-it-8qA"/>
+                        <constraint firstItem="pcA-cg-T07" firstAttribute="centerY" secondItem="JU9-wf-ApJ" secondAttribute="centerY" id="xWo-jZ-7ep"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="KdC-Id-EOD" customClass="RecipeListTableView" customModule="Ricipidian" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="104" width="414" height="758"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Rk-lL-nth">
+                    <rect key="frame" x="358" y="806" width="40" height="40"/>
+                    <color key="backgroundColor" name="AccentColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="fp9-AJ-o4k"/>
+                        <constraint firstAttribute="height" constant="40" id="fsc-Pg-4Wb"/>
+                    </constraints>
+                    <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" image="plus" catalog="system"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="KdC-Id-EOD" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="4M4-tS-yuS"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="JU9-wf-ApJ" secondAttribute="trailing" id="8do-H4-sXx"/>
+                <constraint firstItem="JU9-wf-ApJ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="TYb-eB-Qkm"/>
+                <constraint firstItem="KdC-Id-EOD" firstAttribute="top" secondItem="JU9-wf-ApJ" secondAttribute="bottom" id="esp-iJ-RSX"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="KdC-Id-EOD" secondAttribute="trailing" id="ieW-9p-eWl"/>
+                <constraint firstItem="JU9-wf-ApJ" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="r7J-OB-bXj"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="1Rk-lL-nth" secondAttribute="bottom" constant="16" id="wO5-Ox-0rM"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="KdC-Id-EOD" secondAttribute="bottom" id="wzJ-xZ-gFB"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="1Rk-lL-nth" secondAttribute="trailing" constant="16" id="x8B-vX-VX1"/>
+            </constraints>
+            <point key="canvasLocation" x="122" y="129"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="arrowtriangle.down.fill" catalog="system" width="128" height="124"/>
+        <image name="folder" catalog="system" width="128" height="97"/>
+        <image name="plus" catalog="system" width="128" height="113"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
