@@ -5,6 +5,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -29,30 +30,26 @@
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </imageView>
-                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Recipe's name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ryc-6a-2WG">
-                        <rect key="frame" x="16" y="182" width="477" height="135"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                        <textInputTraits key="textInputTraits"/>
-                    </textField>
-                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" borderStyle="roundedRect" placeholder="Desciption" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IRJ-Mq-mHn">
-                        <rect key="frame" x="16" y="333" width="477" height="100"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="100" id="o7A-IZ-Qs1"/>
-                        </constraints>
-                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                        <textInputTraits key="textInputTraits"/>
-                    </textField>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="4ds-dt-vgl">
+                        <rect key="frame" x="16" y="182" width="477" height="251"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wci-4g-blS" customClass="CustomTextField" customModule="Ricipidian" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="477" height="251"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Recipe's name"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                    </stackView>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="ryc-6a-2WG" firstAttribute="top" secondItem="khb-Mf-KFe" secondAttribute="bottom" constant="16" id="7GJ-FO-GXN"/>
-                    <constraint firstItem="IRJ-Mq-mHn" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="NKm-Xl-x7x"/>
-                    <constraint firstItem="ryc-6a-2WG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="PwA-RH-aeU"/>
+                    <constraint firstAttribute="trailing" secondItem="4ds-dt-vgl" secondAttribute="trailing" constant="16" id="Flo-NP-qVd"/>
+                    <constraint firstAttribute="bottom" secondItem="4ds-dt-vgl" secondAttribute="bottom" constant="16" id="SZt-3B-zpT"/>
                     <constraint firstItem="khb-Mf-KFe" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="Tlt-IV-m31"/>
-                    <constraint firstAttribute="trailing" secondItem="ryc-6a-2WG" secondAttribute="trailing" constant="16" id="f9y-fg-oQb"/>
+                    <constraint firstItem="4ds-dt-vgl" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="Z7n-qw-D1l"/>
                     <constraint firstItem="khb-Mf-KFe" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="j4F-3P-0ef"/>
-                    <constraint firstItem="IRJ-Mq-mHn" firstAttribute="top" secondItem="ryc-6a-2WG" secondAttribute="bottom" constant="16" id="p7F-iB-LI3"/>
-                    <constraint firstAttribute="bottom" secondItem="IRJ-Mq-mHn" secondAttribute="bottom" constant="16" id="qbb-rB-GHR"/>
-                    <constraint firstAttribute="trailing" secondItem="IRJ-Mq-mHn" secondAttribute="trailing" constant="16" id="z6u-C2-c4z"/>
+                    <constraint firstItem="4ds-dt-vgl" firstAttribute="top" secondItem="khb-Mf-KFe" secondAttribute="bottom" constant="16" id="xRQ-sb-aGh"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
@@ -61,5 +58,8 @@
     </objects>
     <resources>
         <image name="rectangle.stack.fill.badge.plus" catalog="system" width="128" height="117"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>
