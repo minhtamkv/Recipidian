@@ -1,5 +1,5 @@
 //
-//  CustomTextField.swift
+//  CustomTextAreaView.swift
 //  Ricipidian
 //
 //  Created by Minh Tâm on 28/03/2021.
@@ -11,9 +11,9 @@ import RxCocoa
 import RxSwift
 import UIKit
 
-class CustomTextField: UIView {
+class CustomTextAreaView: UIView {
     private let fontSize = CGFloat(15.0)
-    private var textInput: MDCFilledTextField!
+    private var textInput: MDCFilledTextArea!
     let disposeBag = DisposeBag()
     let textDidEndEditing = PublishRelay<String>()
 
@@ -37,20 +37,21 @@ class CustomTextField: UIView {
 
     private func setupInputView() {
         if let _ = viewWithTag(1) { return }
-        textInput = MDCFilledTextField()
+        textInput = MDCFilledTextArea()
+        textInput.height = 45
         tag = 1
         textInput.tag = 1
         textInput.translatesAutoresizingMaskIntoConstraints = false
-        textInput.delegate = self
         textInput.sizeToFit()
+        textInput.textView.delegate = self
         textInput.placeholder = placeholder
         textInput.label.text = placeholder
-        textInput.setNormalLabelColor(.gray, for: .normal)
+        textInput.setNormalLabel(.gray, for: .normal)
         textInput.setUnderlineColor(.gray, for: .normal)
         textInput.setUnderlineColor(.gray, for: .editing)
-        textInput.isSecureTextEntry = isSecurity
-        textInput.clearButtonMode = .whileEditing
-        textInput.textColor = UIColor(hexString: "1A1E1F") ?? UIColor.black
+        textInput.maximumNumberOfVisibleRows = 3
+//        textInput.textView.clearButtonMode = .whileEditing
+        textInput.textView.textColor = UIColor(hexString: "1A1E1F") ?? UIColor.black
 
         addSubview(textInput)
 
@@ -59,8 +60,8 @@ class CustomTextField: UIView {
         }
     }
 
-    // MARK: - Create properties custom
-
+//    // MARK: - Create properties custom
+//
     @IBInspectable var placeholder: String = "" {
         didSet {
             textInput.placeholder = placeholder
@@ -68,16 +69,9 @@ class CustomTextField: UIView {
         }
     }
 
-    @IBInspectable var isSecurity: Bool = false {
-        didSet {
-            textInput.isSecureTextEntry = isSecurity
-            textInput.clearButtonMode = .whileEditing
-        }
-    }
-
     @IBInspectable var textValue: String? {
         didSet {
-            textInput.text = textValue
+            textInput.textView.text = textValue
         }
     }
 
@@ -88,33 +82,33 @@ class CustomTextField: UIView {
     // MARK: - Bind to Text
 
     func bindToWithText(_ controlProperty: BehaviorRelay<String?>) {
-        textInput.bindToText(controlProperty).disposed(by: disposeBag)
+        textInput.textView.bindToText(controlProperty).disposed(by: disposeBag)
     }
 
     public func subscribeText(onNext: ((String) -> Void)?) {
-        textInput.rx.text.orEmpty.observe(on: MainScheduler.instance).map { $0.trimmed }.subscribe(onNext: onNext, onError: nil, onCompleted: nil, onDisposed: nil).disposed(by: disposeBag)
+        textInput.textView.rx.text.orEmpty.observe(on: MainScheduler.instance).map { $0.trimmed }.subscribe(onNext: onNext, onError: nil, onCompleted: nil, onDisposed: nil).disposed(by: disposeBag)
     }
 
     public func subscribeTextWithSkip(onNext: @escaping ((String) -> Void), _ skip: Int = 1) {
-        textInput.rx.text.orEmpty.observe(on: MainScheduler.instance).map { $0.trimmed }.skip(skip).subscribe(onNext: onNext, onError: nil, onCompleted: nil, onDisposed: nil).disposed(by: disposeBag)
+        textInput.textView.rx.text.orEmpty.observe(on: MainScheduler.instance).map { $0.trimmed }.skip(skip).subscribe(onNext: onNext, onError: nil, onCompleted: nil, onDisposed: nil).disposed(by: disposeBag)
     }
 
     fileprivate func bindDataView(_ behaviorRelay: BehaviorRelay<String>) {
-        textInput.rx.text.orEmpty.bind(to: behaviorRelay).disposed(by: disposeBag)
+        textInput.textView.rx.text.orEmpty.bind(to: behaviorRelay).disposed(by: disposeBag)
     }
 
     fileprivate func bindToText(_ publishRelay: PublishRelay<String>) {
-        textInput.rx.text.orEmpty.bind(to: publishRelay).disposed(by: disposeBag)
+        textInput.textView.rx.text.orEmpty.bind(to: publishRelay).disposed(by: disposeBag)
     }
 
     func setText(_ text: String?) {
-        textInput.setText(text)
+        textInput.textView.text = text
     }
 }
 
-extension CustomTextField: UITextFieldDelegate {
-    func textFieldDidEndEditing(_ textField: UITextField) {
-        textValue = textField.text
+extension CustomTextAreaView: UITextViewDelegate {
+    func textViewDidEndEditing(_ textView: UITextView) {
+        textValue = textView.text
         textDidEndEditing.accept(textValue ?? "")
     }
 }
