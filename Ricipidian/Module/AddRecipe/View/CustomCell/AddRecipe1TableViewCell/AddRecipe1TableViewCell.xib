@@ -30,31 +30,33 @@
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </imageView>
-                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wci-4g-blS" customClass="CustomTextFieldView" customModule="Ricipidian" customModuleProvider="target">
-                        <rect key="frame" x="16" y="182" width="699" height="463"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <userDefinedRuntimeAttributes>
-                            <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Recipe's name"/>
-                        </userDefinedRuntimeAttributes>
-                    </view>
-                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ITB-By-95e" customClass="CustomTextAreaView" customModule="Ricipidian" customModuleProvider="target">
-                        <rect key="frame" x="16" y="661" width="699" height="50"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <userDefinedRuntimeAttributes>
-                            <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Description"/>
-                        </userDefinedRuntimeAttributes>
-                    </view>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="2JI-6x-ETU">
+                        <rect key="frame" x="16" y="182" width="699" height="526"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wci-4g-blS" customClass="CustomTextFieldView" customModule="Ricipidian" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="699" height="463"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Recipe's name"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ITB-By-95e" customClass="CustomTextAreaView" customModule="Ricipidian" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="479" width="699" height="47"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Description"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                    </stackView>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="ITB-By-95e" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="6sf-Ji-LVR"/>
-                    <constraint firstAttribute="trailing" secondItem="ITB-By-95e" secondAttribute="trailing" constant="16" id="98s-BA-xXc"/>
-                    <constraint firstItem="wci-4g-blS" firstAttribute="top" secondItem="khb-Mf-KFe" secondAttribute="bottom" constant="16" id="H3R-fo-JEB"/>
+                    <constraint firstItem="2JI-6x-ETU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="0us-Z1-HUv"/>
                     <constraint firstItem="khb-Mf-KFe" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="Tlt-IV-m31"/>
-                    <constraint firstItem="ITB-By-95e" firstAttribute="top" secondItem="wci-4g-blS" secondAttribute="bottom" constant="16" id="b4e-Bv-6nR"/>
+                    <constraint firstAttribute="trailing" secondItem="2JI-6x-ETU" secondAttribute="trailing" constant="16" id="ZQi-zb-79L"/>
                     <constraint firstItem="khb-Mf-KFe" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="j4F-3P-0ef"/>
-                    <constraint firstAttribute="trailing" secondItem="wci-4g-blS" secondAttribute="trailing" constant="16" id="o5L-eT-Dcp"/>
-                    <constraint firstAttribute="bottom" secondItem="ITB-By-95e" secondAttribute="bottom" constant="16" id="wrU-Sf-ell"/>
-                    <constraint firstItem="wci-4g-blS" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="yi5-z5-h3P"/>
+                    <constraint firstAttribute="bottom" secondItem="2JI-6x-ETU" secondAttribute="bottom" constant="16" id="pab-fV-rta"/>
+                    <constraint firstItem="2JI-6x-ETU" firstAttribute="top" secondItem="khb-Mf-KFe" secondAttribute="bottom" constant="16" id="sxR-ad-rVP"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>

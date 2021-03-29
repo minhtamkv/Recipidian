@@ -44,6 +44,10 @@
 		8894BE88260A532F00BEF8FA /* RecipeListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8894BE86260A532F00BEF8FA /* RecipeListViewController.xib */; };
 		88C588BE260AD57A00181C3C /* RecipeListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C588BC260AD57A00181C3C /* RecipeListTableViewCell.swift */; };
 		88C588BF260AD57A00181C3C /* RecipeListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88C588BD260AD57A00181C3C /* RecipeListTableViewCell.xib */; };
+		88C6F7372611872F0072B373 /* AddRecipe2TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C6F7352611872F0072B373 /* AddRecipe2TableViewCell.swift */; };
+		88C6F7382611872F0072B373 /* AddRecipe2TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88C6F7362611872F0072B373 /* AddRecipe2TableViewCell.xib */; };
+		88C6F7422611898C0072B373 /* MaterialTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C6F7402611898C0072B373 /* MaterialTableViewCell.swift */; };
+		88C6F7432611898C0072B373 /* MaterialTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88C6F7412611898C0072B373 /* MaterialTableViewCell.xib */; };
 		88CD95ED2610E16700FD5CB9 /* CustomTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CD95EC2610E16700FD5CB9 /* CustomTextFieldView.swift */; };
 		88CD95F52610E18700FD5CB9 /* CustomTextAreaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CD95F42610E18700FD5CB9 /* CustomTextAreaView.swift */; };
 		88D17FD7260F4463005C032C /* RecipeGroupListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D17FD5260F4463005C032C /* RecipeGroupListTableViewCell.swift */; };
@@ -149,6 +153,10 @@
 		8894BE86260A532F00BEF8FA /* RecipeListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecipeListViewController.xib; sourceTree = "<group>"; };
 		88C588BC260AD57A00181C3C /* RecipeListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeListTableViewCell.swift; sourceTree = "<group>"; };
 		88C588BD260AD57A00181C3C /* RecipeListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecipeListTableViewCell.xib; sourceTree = "<group>"; };
+		88C6F7352611872F0072B373 /* AddRecipe2TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRecipe2TableViewCell.swift; sourceTree = "<group>"; };
+		88C6F7362611872F0072B373 /* AddRecipe2TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddRecipe2TableViewCell.xib; sourceTree = "<group>"; };
+		88C6F7402611898C0072B373 /* MaterialTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialTableViewCell.swift; sourceTree = "<group>"; };
+		88C6F7412611898C0072B373 /* MaterialTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MaterialTableViewCell.xib; sourceTree = "<group>"; };
 		88CD95EC2610E16700FD5CB9 /* CustomTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextFieldView.swift; sourceTree = "<group>"; };
 		88CD95F42610E18700FD5CB9 /* CustomTextAreaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextAreaView.swift; sourceTree = "<group>"; };
 		88D17FD5260F4463005C032C /* RecipeGroupListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeGroupListTableViewCell.swift; sourceTree = "<group>"; };
@@ -362,6 +370,24 @@
 			path = Service;
 			sourceTree = "<group>";
 		};
+		88C6F734261187170072B373 /* AddRecipe2TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				88C6F7352611872F0072B373 /* AddRecipe2TableViewCell.swift */,
+				88C6F7362611872F0072B373 /* AddRecipe2TableViewCell.xib */,
+			);
+			path = AddRecipe2TableViewCell;
+			sourceTree = "<group>";
+		};
+		88C6F73F261189710072B373 /* MaterialTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				88C6F7402611898C0072B373 /* MaterialTableViewCell.swift */,
+				88C6F7412611898C0072B373 /* MaterialTableViewCell.xib */,
+			);
+			path = MaterialTableViewCell;
+			sourceTree = "<group>";
+		};
 		88D17FD3260F43E8005C032C /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
@@ -438,7 +464,8 @@
 		88D17FF4260F50C1005C032C /* CustomCell */ = {
 			isa = PBXGroup;
 			children = (
-				88D5BED8260F9A620074C1EF /* AddRecipe2TableViewCell */,
+				88C6F73F261189710072B373 /* MaterialTableViewCell */,
+				88C6F734261187170072B373 /* AddRecipe2TableViewCell */,
 				88D5BEBC260F8BA50074C1EF /* AddRecipe1TableViewCell */,
 			);
 			path = CustomCell;
@@ -460,13 +487,6 @@
 				88D17FFF260F53CA005C032C /* AddRecipe1TableViewCellViewModel.swift */,
 			);
 			path = AddRecipe1TableViewCell;
-			sourceTree = "<group>";
-		};
-		88D5BED8260F9A620074C1EF /* AddRecipe2TableViewCell */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = AddRecipe2TableViewCell;
 			sourceTree = "<group>";
 		};
 		88D76CA926084D57007A55DB /* View */ = {
@@ -783,11 +803,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88C6F7432611898C0072B373 /* MaterialTableViewCell.xib in Resources */,
 				88D17FF8260F53AF005C032C /* AddRecipe1TableViewCell.xib in Resources */,
 				8894BE88260A532F00BEF8FA /* RecipeListViewController.xib in Resources */,
 				88C588BF260AD57A00181C3C /* RecipeListTableViewCell.xib in Resources */,
 				88D17FD8260F4463005C032C /* RecipeGroupListTableViewCell.xib in Resources */,
 				88D5BED1260F98AC0074C1EF /* AddRecipeViewController.xib in Resources */,
+				88C6F7382611872F0072B373 /* AddRecipe2TableViewCell.xib in Resources */,
 				88E592BB260666A000803C82 /* LaunchScreen.storyboard in Resources */,
 				88E592B8260666A000803C82 /* Assets.xcassets in Resources */,
 				88E592B62606669F00803C82 /* Main.storyboard in Resources */,
@@ -924,6 +946,8 @@
 				88749077260675E8004D65BA /* UICollectionView.swift in Sources */,
 				887490CC26067D37004D65BA /* DatePickerViewController.swift in Sources */,
 				88D76CAB26084DC0007A55DB /* BaseTableViewCell.swift in Sources */,
+				88C6F7422611898C0072B373 /* MaterialTableViewCell.swift in Sources */,
+				88C6F7372611872F0072B373 /* AddRecipe2TableViewCell.swift in Sources */,
 				88E592B32606669F00803C82 /* ViewController.swift in Sources */,
 				88FF00562609E744003FB601 /* CustomESTabBarItemContentView.swift in Sources */,
 				88F461E4260C75F700A4397E /* RecipeListTableView.swift in Sources */,
