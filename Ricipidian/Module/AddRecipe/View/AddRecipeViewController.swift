@@ -10,14 +10,14 @@ import RxSwift
 import UIKit
 
 class AddRecipeViewController: BaseViewController {
-    @IBOutlet weak var tableView: AddRecipeTableView!
+    @IBOutlet var tableView: AddRecipeTableView!
     var viewModel: AddRecipeViewModelProtocol!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         viewModel.viewDidLoad.accept(())
     }
-
+    
     override func setupView() {
         tableView.setViewModel(viewModel: viewModel)
         title = "Add Recipe"

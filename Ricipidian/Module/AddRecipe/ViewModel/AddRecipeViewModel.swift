@@ -6,7 +6,6 @@
 //
 
 import RxCocoa
-import RxSwift
 
 class AddRecipeViewModel: BaseCollectionVM, AddRecipeViewModelProtocol {
     private let coordinator: AddRecipeCoordinatorProtocol
@@ -23,9 +22,12 @@ class AddRecipeViewModel: BaseCollectionVM, AddRecipeViewModelProtocol {
     }
 
     func initData() {
-        resetData()
+//        resetData()
         let row1 = AddRecipe1TableViewCellViewModel()
         addRow(rowViewModel: row1)
+        
+        let row2 = AddRecipe2TableViewCellViewModel()
+        addRow(rowViewModel: row2)
         updateView()
     }
 }

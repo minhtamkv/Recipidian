@@ -9,17 +9,18 @@ import Foundation
 import UIKit
 
 class AddRecipeTableView: TableViewCommon {
-    override func setupTableView() {
-        super.setupTableView()
-        configSelectionStyle(selectionStyle: .none, separatorStyle: .singleLine)
-    }
-
     override func registerCell() {
-        registerTableViewCell(cellListName: [AddRecipe1TableViewCell.identifier])
+        registerTableViewCell(cellListName: [AddRecipe1TableViewCell.identifier, AddRecipe2TableViewCell.identifier])
     }
 
     override func cellIdentifier(for viewModel: RowViewModel) -> String {
-        return AddRecipe1TableViewCell.identifier
+        switch viewModel {
+        case is AddRecipe1TableViewCellViewModel:
+            return AddRecipe1TableViewCell.identifier
+        default:
+            return AddRecipe2TableViewCell.identifier
+        }
+        
     }
 
     override func heightHeaderSection() -> CGFloat {

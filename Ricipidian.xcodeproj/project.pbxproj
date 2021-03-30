@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		7F9E5990EE324F74140B025F /* Pods_Ricipidian.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5233A614655B9AD4EABB4F0C /* Pods_Ricipidian.framework */; };
+		8801C1692613220400755AA3 /* MaterialTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8801C1682613220400755AA3 /* MaterialTableView.swift */; };
+		8801C1762613232500755AA3 /* AddRecipe2TableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8801C1752613232500755AA3 /* AddRecipe2TableViewCellViewModel.swift */; };
+		8801C17B261324DC00755AA3 /* MaterialTableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8801C17A261324DC00755AA3 /* MaterialTableViewCellViewModel.swift */; };
+		8801C1822613256900755AA3 /* AddMaterialTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8801C1802613256900755AA3 /* AddMaterialTableViewCell.swift */; };
+		8801C1832613256900755AA3 /* AddMaterialTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8801C1812613256900755AA3 /* AddMaterialTableViewCell.xib */; };
+		8801C1882613267500755AA3 /* AddMaterialTableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8801C1872613267500755AA3 /* AddMaterialTableViewCellViewModel.swift */; };
+		8801C19A2613299F00755AA3 /* MaterialTableViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8801C1992613299F00755AA3 /* MaterialTableViewViewModel.swift */; };
 		8836053526087A6700A047E0 /* BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8836053426087A6700A047E0 /* BaseTableViewController.swift */; };
 		8836053B26087AF000A047E0 /* TableViewCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8836053A26087AF000A047E0 /* TableViewCommon.swift */; };
 		8874902A26066F54004D65BA /* UserDefaultHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8874902926066F54004D65BA /* UserDefaultHelper.swift */; };
@@ -117,6 +124,13 @@
 		39B22DA1EDDFAE36ECCD28F0 /* Pods-Ricipidian-RicipidianUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ricipidian-RicipidianUITests.release.xcconfig"; path = "Target Support Files/Pods-Ricipidian-RicipidianUITests/Pods-Ricipidian-RicipidianUITests.release.xcconfig"; sourceTree = "<group>"; };
 		5233A614655B9AD4EABB4F0C /* Pods_Ricipidian.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ricipidian.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		546D2D681A52E23E0B2B3049 /* Pods_RicipidianTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RicipidianTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8801C1682613220400755AA3 /* MaterialTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialTableView.swift; sourceTree = "<group>"; };
+		8801C1752613232500755AA3 /* AddRecipe2TableViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRecipe2TableViewCellViewModel.swift; sourceTree = "<group>"; };
+		8801C17A261324DC00755AA3 /* MaterialTableViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialTableViewCellViewModel.swift; sourceTree = "<group>"; };
+		8801C1802613256900755AA3 /* AddMaterialTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMaterialTableViewCell.swift; sourceTree = "<group>"; };
+		8801C1812613256900755AA3 /* AddMaterialTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddMaterialTableViewCell.xib; sourceTree = "<group>"; };
+		8801C1872613267500755AA3 /* AddMaterialTableViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMaterialTableViewCellViewModel.swift; sourceTree = "<group>"; };
+		8801C1992613299F00755AA3 /* MaterialTableViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialTableViewViewModel.swift; sourceTree = "<group>"; };
 		8836053426087A6700A047E0 /* BaseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewController.swift; sourceTree = "<group>"; };
 		8836053A26087AF000A047E0 /* TableViewCommon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCommon.swift; sourceTree = "<group>"; };
 		8874902926066F54004D65BA /* UserDefaultHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultHelper.swift; sourceTree = "<group>"; };
@@ -239,6 +253,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8801C17F2613253600755AA3 /* AddMaterialTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				8801C1802613256900755AA3 /* AddMaterialTableViewCell.swift */,
+				8801C1812613256900755AA3 /* AddMaterialTableViewCell.xib */,
+				8801C1872613267500755AA3 /* AddMaterialTableViewCellViewModel.swift */,
+			);
+			path = AddMaterialTableViewCell;
+			sourceTree = "<group>";
+		};
+		8801C18C261326CC00755AA3 /* AddRecipeTableView */ = {
+			isa = PBXGroup;
+			children = (
+				88D1801B260F598C005C032C /* AddRecipeTableView.swift */,
+			);
+			path = AddRecipeTableView;
+			sourceTree = "<group>";
+		};
+		8801C1922613277D00755AA3 /* MaterialTableView */ = {
+			isa = PBXGroup;
+			children = (
+				8801C1682613220400755AA3 /* MaterialTableView.swift */,
+				8801C1992613299F00755AA3 /* MaterialTableViewViewModel.swift */,
+			);
+			path = MaterialTableView;
+			sourceTree = "<group>";
+		};
 		8836053926087AD000A047E0 /* CoreLayer */ = {
 			isa = PBXGroup;
 			children = (
@@ -375,6 +416,7 @@
 			children = (
 				88C6F7352611872F0072B373 /* AddRecipe2TableViewCell.swift */,
 				88C6F7362611872F0072B373 /* AddRecipe2TableViewCell.xib */,
+				8801C1752613232500755AA3 /* AddRecipe2TableViewCellViewModel.swift */,
 			);
 			path = AddRecipe2TableViewCell;
 			sourceTree = "<group>";
@@ -384,6 +426,7 @@
 			children = (
 				88C6F7402611898C0072B373 /* MaterialTableViewCell.swift */,
 				88C6F7412611898C0072B373 /* MaterialTableViewCell.xib */,
+				8801C17A261324DC00755AA3 /* MaterialTableViewCellViewModel.swift */,
 			);
 			path = MaterialTableViewCell;
 			sourceTree = "<group>";
@@ -464,6 +507,7 @@
 		88D17FF4260F50C1005C032C /* CustomCell */ = {
 			isa = PBXGroup;
 			children = (
+				8801C17F2613253600755AA3 /* AddMaterialTableViewCell */,
 				88C6F73F261189710072B373 /* MaterialTableViewCell */,
 				88C6F734261187170072B373 /* AddRecipe2TableViewCell */,
 				88D5BEBC260F8BA50074C1EF /* AddRecipe1TableViewCell */,
@@ -474,7 +518,8 @@
 		88D18020260F599D005C032C /* CustomTableView */ = {
 			isa = PBXGroup;
 			children = (
-				88D1801B260F598C005C032C /* AddRecipeTableView.swift */,
+				8801C1922613277D00755AA3 /* MaterialTableView */,
+				8801C18C261326CC00755AA3 /* AddRecipeTableView */,
 			);
 			path = CustomTableView;
 			sourceTree = "<group>";
@@ -808,6 +853,7 @@
 				8894BE88260A532F00BEF8FA /* RecipeListViewController.xib in Resources */,
 				88C588BF260AD57A00181C3C /* RecipeListTableViewCell.xib in Resources */,
 				88D17FD8260F4463005C032C /* RecipeGroupListTableViewCell.xib in Resources */,
+				8801C1832613256900755AA3 /* AddMaterialTableViewCell.xib in Resources */,
 				88D5BED1260F98AC0074C1EF /* AddRecipeViewController.xib in Resources */,
 				88C6F7382611872F0072B373 /* AddRecipe2TableViewCell.xib in Resources */,
 				88E592BB260666A000803C82 /* LaunchScreen.storyboard in Resources */,
@@ -941,6 +987,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				88D1800A260F585F005C032C /* AddRecipeViewModel.swift in Sources */,
+				8801C1692613220400755AA3 /* MaterialTableView.swift in Sources */,
 				88D76CA026084C3E007A55DB /* NetworkState.swift in Sources */,
 				8874909626067913004D65BA /* UIButton.swift in Sources */,
 				88749077260675E8004D65BA /* UICollectionView.swift in Sources */,
@@ -972,6 +1019,7 @@
 				88F461D9260C755D00A4397E /* RecipeListCoordinatorProtocol.swift in Sources */,
 				88749039260670CD004D65BA /* Coordinator.swift in Sources */,
 				88FFFFE82609D671003FB601 /* GlobalData.swift in Sources */,
+				8801C1882613267500755AA3 /* AddMaterialTableViewCellViewModel.swift in Sources */,
 				88D17FF7260F53AF005C032C /* AddRecipe1TableViewCell.swift in Sources */,
 				88CD95F52610E18700FD5CB9 /* CustomTextAreaView.swift in Sources */,
 				88CD95ED2610E16700FD5CB9 /* CustomTextFieldView.swift in Sources */,
@@ -982,10 +1030,12 @@
 				88749047260672CB004D65BA /* BaseViewModel.swift in Sources */,
 				887490AA26067A55004D65BA /* UIView.swift in Sources */,
 				88FFFFE32609D620003FB601 /* MainTabbarCoordinator.swift in Sources */,
+				8801C1762613232500755AA3 /* AddRecipe2TableViewCellViewModel.swift in Sources */,
 				88D18025260F5B06005C032C /* AddRecipeViewModelProtocol.swift in Sources */,
 				887490A0260679EE004D65BA /* UISearchBar.swift in Sources */,
 				8874902A26066F54004D65BA /* UserDefaultHelper.swift in Sources */,
 				887490BA26067C10004D65BA /* CustomTableView.swift in Sources */,
+				8801C17B261324DC00755AA3 /* MaterialTableViewCellViewModel.swift in Sources */,
 				88FF006C2609EA32003FB601 /* RecipeListCoordinator.swift in Sources */,
 				887490D126067D85004D65BA /* PopupDialogCustom.swift in Sources */,
 				88D17FD7260F4463005C032C /* RecipeGroupListTableViewCell.swift in Sources */,
@@ -1009,6 +1059,8 @@
 				88749072260675B4004D65BA /* UITableView.swift in Sources */,
 				88D17FE4260F4AD7005C032C /* Recipe.swift in Sources */,
 				88D17FDD260F45FE005C032C /* RecipeGroupListTableViewCellViewModel.swift in Sources */,
+				8801C1822613256900755AA3 /* AddMaterialTableViewCell.swift in Sources */,
+				8801C19A2613299F00755AA3 /* MaterialTableViewViewModel.swift in Sources */,
 				88D76CA526084C7C007A55DB /* NotifyName.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

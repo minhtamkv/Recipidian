@@ -5,19 +5,16 @@
 //  Created by Minh Tâm on 29/03/2021.
 //
 
+import Foundation
+import RxCocoa
+import RxSwift
 import UIKit
 
-class MaterialTableViewCell: UITableViewCell {
+class MaterialTableViewCell: BaseTableViewCell {
+    var cellViewModel: MaterialTableViewCellViewModel!
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    override func setupView(viewModel: RowViewModel) {
+        cellViewModel = viewModel as? MaterialTableViewCellViewModel
+        guard let cvm = cellViewModel else { return }
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-    
 }
