@@ -1,5 +1,5 @@
 //
-//  MaterialTableView.swift
+//  StepTableView.swift
 //  Ricipidian
 //
 //  Created by Minh Tâm on 30/03/2021.
@@ -8,22 +8,22 @@
 import Foundation
 import UIKit
 
-class MaterialTableView: TableViewCommon {
+class StepTableView: TableViewCommon {
     override func setupTableView() {
         super.setupTableView()
         isScrollEnabled = false
     }
     
     override func registerCell() {
-        registerTableViewCell(cellListName: [MaterialTableViewCell.identifier, AddMaterialTableViewCell.identifier])
+        registerTableViewCell(cellListName: [StepTableViewCell.identifier, AddStepTableViewCell.identifier])
     }
 
     override func cellIdentifier(for viewModel: RowViewModel) -> String {
         switch viewModel {
-        case is MaterialTableViewCellViewModel:
-            return MaterialTableViewCell.identifier
+        case is StepTableViewCellViewModel:
+            return StepTableViewCell.identifier
         default:
-            return AddMaterialTableViewCell.identifier
+            return AddStepTableViewCell.identifier
         }
     }
 }

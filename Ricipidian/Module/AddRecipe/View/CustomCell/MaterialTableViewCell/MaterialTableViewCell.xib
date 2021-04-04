@@ -19,13 +19,13 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E8U-hc-Dtm">
-                        <rect key="frame" x="16" y="16" width="335" height="87"/>
+                        <rect key="frame" x="16" y="0.0" width="335" height="103"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="tL8-Qr-kVa">
-                                <rect key="frame" x="0.0" y="0.0" width="335" height="87"/>
+                                <rect key="frame" x="0.0" y="0.0" width="335" height="103"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4kh-Bo-trg" customClass="CustomTextFieldView" customModule="Ricipidian" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="335" height="87"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="103"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="You will need"/>
@@ -45,7 +45,7 @@
                 </subviews>
                 <constraints>
                     <constraint firstAttribute="trailing" secondItem="E8U-hc-Dtm" secondAttribute="trailing" constant="16" id="KJW-bm-zeN"/>
-                    <constraint firstItem="E8U-hc-Dtm" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="gxt-We-ZSr"/>
+                    <constraint firstItem="E8U-hc-Dtm" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="gxt-We-ZSr"/>
                     <constraint firstItem="E8U-hc-Dtm" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="mEo-ng-Tc0"/>
                     <constraint firstAttribute="bottom" secondItem="E8U-hc-Dtm" secondAttribute="bottom" constant="16" id="xRm-gj-EmL"/>
                 </constraints>

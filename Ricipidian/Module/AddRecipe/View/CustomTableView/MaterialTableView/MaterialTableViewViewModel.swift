@@ -6,15 +6,23 @@
 //
 
 import Foundation
+import RxCocoa
+import RxSwift
 
 class MaterialTableViewViewModel: BaseCollectionVM {
+    var addRowWhenClickAdd = PublishRelay<Void>()
+    
     func initData() {
         resetData()
         let row1 = MaterialTableViewCellViewModel()
-        addRow(rowViewModel: row1)
-
+        addRowWithSection(section: 0, rowViewModel: row1, headerTitle: "Material")
         let row = AddMaterialTableViewCellViewModel()
-        addRow(rowViewModel: row)
+        row.didSelectedItem = { [weak self] in
+            let newRow = MaterialTableViewCellViewModel()
+            self?.addRow(rowViewModel: newRow)
+            self?.addRowWhenClickAdd.accept(())
+        }
+        addRowWithSection(section: 0, rowViewModel: row)
 
         updateView()
     }

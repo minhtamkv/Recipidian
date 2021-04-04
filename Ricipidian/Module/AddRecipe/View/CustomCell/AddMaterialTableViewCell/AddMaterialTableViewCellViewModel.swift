@@ -7,5 +7,6 @@
 
 import Foundation
 
-class AddMaterialTableViewCellViewModel: RowViewModel {
+class AddMaterialTableViewCellViewModel: RowViewModel, CellDidSelect {
+    var didSelectedItem: (() -> Void)?
 }

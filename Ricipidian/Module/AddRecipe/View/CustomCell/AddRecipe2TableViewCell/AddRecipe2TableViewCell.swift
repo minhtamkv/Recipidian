@@ -11,7 +11,6 @@ import RxSwift
 import UIKit
 
 class AddRecipe2TableViewCell: BaseTableViewCell {
-    @IBOutlet weak var materialLabel: UILabel!
     @IBOutlet var materialTableView: MaterialTableView!
     var cellViewModel: AddRecipe2TableViewCellViewModel!
 
@@ -20,13 +19,12 @@ class AddRecipe2TableViewCell: BaseTableViewCell {
         guard let cvm = cellViewModel else { return }
         materialTableView.setViewModel(viewModel: cvm.materialTableViewViewModel)
         cvm.materialTableViewViewModel.initData()
-        backgroundColor = .gray
     }
 
     override func systemLayoutSizeFitting(_ targetSize: CGSize, withHorizontalFittingPriority horizontalFittingPriority: UILayoutPriority, verticalFittingPriority: UILayoutPriority) -> CGSize {
         contentView.frame = bounds
         contentView.layoutIfNeeded()
-        var size = CGSize(width: materialTableView.frame.width, height: materialTableView.contentSize.height + materialLabel.height + 500)
+        var size = CGSize(width: materialTableView.frame.width, height: materialTableView.contentSize.height)
         size.height = materialTableView.contentSize.height
         return size
     }

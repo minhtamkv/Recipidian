@@ -49,6 +49,17 @@
 		887490F626067F3C004D65BA /* BaseServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887490F526067F3C004D65BA /* BaseServiceManager.swift */; };
 		8894BE87260A532F00BEF8FA /* RecipeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8894BE85260A532F00BEF8FA /* RecipeListViewController.swift */; };
 		8894BE88260A532F00BEF8FA /* RecipeListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8894BE86260A532F00BEF8FA /* RecipeListViewController.xib */; };
+		88C029B126138C48006A3075 /* StepTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C029AF26138C48006A3075 /* StepTableViewCell.swift */; };
+		88C029B226138C48006A3075 /* StepTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88C029B026138C48006A3075 /* StepTableViewCell.xib */; };
+		88C029BA26138C5E006A3075 /* StepTableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C029B926138C5E006A3075 /* StepTableViewCellViewModel.swift */; };
+		88C029C026138D3D006A3075 /* StepTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C029BF26138D3D006A3075 /* StepTableView.swift */; };
+		88C029CA26138E06006A3075 /* AddRecipe3TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C029C826138E06006A3075 /* AddRecipe3TableViewCell.swift */; };
+		88C029CB26138E06006A3075 /* AddRecipe3TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88C029C926138E06006A3075 /* AddRecipe3TableViewCell.xib */; };
+		88C029D026138E42006A3075 /* AddRecipe3TableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C029CF26138E42006A3075 /* AddRecipe3TableViewCellViewModel.swift */; };
+		88C029D726138F30006A3075 /* AddStepTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C029D526138F30006A3075 /* AddStepTableViewCell.swift */; };
+		88C029D826138F30006A3075 /* AddStepTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88C029D626138F30006A3075 /* AddStepTableViewCell.xib */; };
+		88C029E026138F80006A3075 /* AddStepTableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C029DF26138F80006A3075 /* AddStepTableViewCellViewModel.swift */; };
+		88C029E526138FE5006A3075 /* StepTableViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C029E426138FE5006A3075 /* StepTableViewViewModel.swift */; };
 		88C588BE260AD57A00181C3C /* RecipeListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C588BC260AD57A00181C3C /* RecipeListTableViewCell.swift */; };
 		88C588BF260AD57A00181C3C /* RecipeListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88C588BD260AD57A00181C3C /* RecipeListTableViewCell.xib */; };
 		88C6F7372611872F0072B373 /* AddRecipe2TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C6F7352611872F0072B373 /* AddRecipe2TableViewCell.swift */; };
@@ -165,6 +176,17 @@
 		887490F526067F3C004D65BA /* BaseServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseServiceManager.swift; sourceTree = "<group>"; };
 		8894BE85260A532F00BEF8FA /* RecipeListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeListViewController.swift; sourceTree = "<group>"; };
 		8894BE86260A532F00BEF8FA /* RecipeListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecipeListViewController.xib; sourceTree = "<group>"; };
+		88C029AF26138C48006A3075 /* StepTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepTableViewCell.swift; sourceTree = "<group>"; };
+		88C029B026138C48006A3075 /* StepTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StepTableViewCell.xib; sourceTree = "<group>"; };
+		88C029B926138C5E006A3075 /* StepTableViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepTableViewCellViewModel.swift; sourceTree = "<group>"; };
+		88C029BF26138D3D006A3075 /* StepTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepTableView.swift; sourceTree = "<group>"; };
+		88C029C826138E06006A3075 /* AddRecipe3TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRecipe3TableViewCell.swift; sourceTree = "<group>"; };
+		88C029C926138E06006A3075 /* AddRecipe3TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddRecipe3TableViewCell.xib; sourceTree = "<group>"; };
+		88C029CF26138E42006A3075 /* AddRecipe3TableViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRecipe3TableViewCellViewModel.swift; sourceTree = "<group>"; };
+		88C029D526138F30006A3075 /* AddStepTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddStepTableViewCell.swift; sourceTree = "<group>"; };
+		88C029D626138F30006A3075 /* AddStepTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddStepTableViewCell.xib; sourceTree = "<group>"; };
+		88C029DF26138F80006A3075 /* AddStepTableViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddStepTableViewCellViewModel.swift; sourceTree = "<group>"; };
+		88C029E426138FE5006A3075 /* StepTableViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepTableViewViewModel.swift; sourceTree = "<group>"; };
 		88C588BC260AD57A00181C3C /* RecipeListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeListTableViewCell.swift; sourceTree = "<group>"; };
 		88C588BD260AD57A00181C3C /* RecipeListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecipeListTableViewCell.xib; sourceTree = "<group>"; };
 		88C6F7352611872F0072B373 /* AddRecipe2TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRecipe2TableViewCell.swift; sourceTree = "<group>"; };
@@ -411,6 +433,45 @@
 			path = Service;
 			sourceTree = "<group>";
 		};
+		88C029AE26138B5B006A3075 /* StepTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				88C029AF26138C48006A3075 /* StepTableViewCell.swift */,
+				88C029B026138C48006A3075 /* StepTableViewCell.xib */,
+				88C029B926138C5E006A3075 /* StepTableViewCellViewModel.swift */,
+			);
+			path = StepTableViewCell;
+			sourceTree = "<group>";
+		};
+		88C029BE26138D2D006A3075 /* StepTableView */ = {
+			isa = PBXGroup;
+			children = (
+				88C029BF26138D3D006A3075 /* StepTableView.swift */,
+				88C029E426138FE5006A3075 /* StepTableViewViewModel.swift */,
+			);
+			path = StepTableView;
+			sourceTree = "<group>";
+		};
+		88C029C726138DCF006A3075 /* AddRecipe3TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				88C029C826138E06006A3075 /* AddRecipe3TableViewCell.swift */,
+				88C029C926138E06006A3075 /* AddRecipe3TableViewCell.xib */,
+				88C029CF26138E42006A3075 /* AddRecipe3TableViewCellViewModel.swift */,
+			);
+			path = AddRecipe3TableViewCell;
+			sourceTree = "<group>";
+		};
+		88C029D426138F13006A3075 /* AddStepTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				88C029D526138F30006A3075 /* AddStepTableViewCell.swift */,
+				88C029D626138F30006A3075 /* AddStepTableViewCell.xib */,
+				88C029DF26138F80006A3075 /* AddStepTableViewCellViewModel.swift */,
+			);
+			path = AddStepTableViewCell;
+			sourceTree = "<group>";
+		};
 		88C6F734261187170072B373 /* AddRecipe2TableViewCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -507,6 +568,9 @@
 		88D17FF4260F50C1005C032C /* CustomCell */ = {
 			isa = PBXGroup;
 			children = (
+				88C029D426138F13006A3075 /* AddStepTableViewCell */,
+				88C029C726138DCF006A3075 /* AddRecipe3TableViewCell */,
+				88C029AE26138B5B006A3075 /* StepTableViewCell */,
 				8801C17F2613253600755AA3 /* AddMaterialTableViewCell */,
 				88C6F73F261189710072B373 /* MaterialTableViewCell */,
 				88C6F734261187170072B373 /* AddRecipe2TableViewCell */,
@@ -518,6 +582,7 @@
 		88D18020260F599D005C032C /* CustomTableView */ = {
 			isa = PBXGroup;
 			children = (
+				88C029BE26138D2D006A3075 /* StepTableView */,
 				8801C1922613277D00755AA3 /* MaterialTableView */,
 				8801C18C261326CC00755AA3 /* AddRecipeTableView */,
 			);
@@ -849,12 +914,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				88C6F7432611898C0072B373 /* MaterialTableViewCell.xib in Resources */,
+				88C029B226138C48006A3075 /* StepTableViewCell.xib in Resources */,
 				88D17FF8260F53AF005C032C /* AddRecipe1TableViewCell.xib in Resources */,
 				8894BE88260A532F00BEF8FA /* RecipeListViewController.xib in Resources */,
 				88C588BF260AD57A00181C3C /* RecipeListTableViewCell.xib in Resources */,
 				88D17FD8260F4463005C032C /* RecipeGroupListTableViewCell.xib in Resources */,
+				88C029CB26138E06006A3075 /* AddRecipe3TableViewCell.xib in Resources */,
 				8801C1832613256900755AA3 /* AddMaterialTableViewCell.xib in Resources */,
 				88D5BED1260F98AC0074C1EF /* AddRecipeViewController.xib in Resources */,
+				88C029D826138F30006A3075 /* AddStepTableViewCell.xib in Resources */,
 				88C6F7382611872F0072B373 /* AddRecipe2TableViewCell.xib in Resources */,
 				88E592BB260666A000803C82 /* LaunchScreen.storyboard in Resources */,
 				88E592B8260666A000803C82 /* Assets.xcassets in Resources */,
@@ -1011,7 +1079,9 @@
 				88F461D4260C73F400A4397E /* RecipeListViewModel.swift in Sources */,
 				88D76CB326084E3B007A55DB /* BaseViewController.swift in Sources */,
 				88E592AF2606669F00803C82 /* AppDelegate.swift in Sources */,
+				88C029D726138F30006A3075 /* AddStepTableViewCell.swift in Sources */,
 				887490572606739C004D65BA /* RowViewModel.swift in Sources */,
+				88C029E026138F80006A3075 /* AddStepTableViewCellViewModel.swift in Sources */,
 				88D1801C260F598C005C032C /* AddRecipeTableView.swift in Sources */,
 				8874904C260672F9004D65BA /* SectionViewModel.swift in Sources */,
 				88D18000260F53CA005C032C /* AddRecipe1TableViewCellViewModel.swift in Sources */,
@@ -1022,12 +1092,15 @@
 				8801C1882613267500755AA3 /* AddMaterialTableViewCellViewModel.swift in Sources */,
 				88D17FF7260F53AF005C032C /* AddRecipe1TableViewCell.swift in Sources */,
 				88CD95F52610E18700FD5CB9 /* CustomTextAreaView.swift in Sources */,
+				88C029E526138FE5006A3075 /* StepTableViewViewModel.swift in Sources */,
+				88C029BA26138C5E006A3075 /* StepTableViewCellViewModel.swift in Sources */,
 				88CD95ED2610E16700FD5CB9 /* CustomTextFieldView.swift in Sources */,
 				887490D626067DC4004D65BA /* IPopupDialogView.swift in Sources */,
 				88F461CF260C722400A4397E /* RecipeListTableViewCellViewModel.swift in Sources */,
 				887490B426067B27004D65BA /* RxSwiftExtenstion.swift in Sources */,
 				88D18014260F587B005C032C /* AddRecipeCoordinator.swift in Sources */,
 				88749047260672CB004D65BA /* BaseViewModel.swift in Sources */,
+				88C029B126138C48006A3075 /* StepTableViewCell.swift in Sources */,
 				887490AA26067A55004D65BA /* UIView.swift in Sources */,
 				88FFFFE32609D620003FB601 /* MainTabbarCoordinator.swift in Sources */,
 				8801C1762613232500755AA3 /* AddRecipe2TableViewCellViewModel.swift in Sources */,
@@ -1041,12 +1114,15 @@
 				88D17FD7260F4463005C032C /* RecipeGroupListTableViewCell.swift in Sources */,
 				887490C226067C4D004D65BA /* CellConfigurable.swift in Sources */,
 				88749064260673E0004D65BA /* BaseRequest.swift in Sources */,
+				88C029C026138D3D006A3075 /* StepTableView.swift in Sources */,
 				8874906A260674C3004D65BA /* Logger.swift in Sources */,
 				887490EE26067EEC004D65BA /* BaseService.swift in Sources */,
 				8836053B26087AF000A047E0 /* TableViewCommon.swift in Sources */,
 				887490A526067A27004D65BA /* UIViewController.swift in Sources */,
 				8874909B260679B4004D65BA /* UITextView.swift in Sources */,
+				88C029CA26138E06006A3075 /* AddRecipe3TableViewCell.swift in Sources */,
 				88D1802A260F5B97005C032C /* AddRecipeCoordinatorProtocol.swift in Sources */,
+				88C029D026138E42006A3075 /* AddRecipe3TableViewCellViewModel.swift in Sources */,
 				88FF00792609EE61003FB601 /* CustomTabbarItemView.swift in Sources */,
 				88E592B12606669F00803C82 /* SceneDelegate.swift in Sources */,
 				88FF00502609E677003FB601 /* BaseNavigationController.swift in Sources */,
