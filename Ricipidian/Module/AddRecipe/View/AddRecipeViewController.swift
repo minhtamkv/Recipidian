@@ -17,7 +17,7 @@ class AddRecipeViewController: BaseViewController {
         super.viewDidLoad()
         viewModel.viewDidLoad.accept(())
     }
-    
+
     override func setupView() {
         tableView.setViewModel(viewModel: viewModel)
         title = "Add Recipe"
@@ -25,5 +25,11 @@ class AddRecipeViewController: BaseViewController {
 
     override func bindViewModel() {
         subscribeCommon(viewModel: viewModel)
+        viewModel.reloadTableView.subscribeShort { [weak self] _ in
+            DispatchQueue.main.async {
+                self?.viewModel.viewDidLoad.accept(())
+                self?.tableView.reloadData()
+            }
+        }.disposed(by: disposeBag)
     }
 }

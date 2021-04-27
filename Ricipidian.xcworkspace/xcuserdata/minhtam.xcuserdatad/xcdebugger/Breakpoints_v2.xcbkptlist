@@ -7,64 +7,94 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "08C1083D-7A8B-4AE6-9E48-9A62B3821C96"
+            uuid = "DA0A05A7-D784-45D5-A71A-7DF69BE573AC"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Ricipidian/Module/AddRecipe/View/CustomCell/AddRecipe2TableViewCell/AddRecipe2TableViewCell.swift"
+            filePath = "Ricipidian/Module/AddRecipe/View/AddRecipeViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "28"
-            endingLineNumber = "28"
-            landmarkName = "systemLayoutSizeFitting(_:withHorizontalFittingPriority:verticalFittingPriority:)"
+            startingLineNumber = "38"
+            endingLineNumber = "38">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "018D2F07-35AE-400B-BACE-214D5DB9B0D7"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Ricipidian/Module/AddRecipe/View/AddRecipeViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "bindViewModel()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "018D2F07-35AE-400B-BACE-214D5DB9B0D7 - 485fe1fbfe9d8501"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (()) -&gt; () in Ricipidian.AddRecipeViewController.bindViewModel() -&gt; ()"
+                  moduleName = "Ricipidian"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/minhtam/Documents/Ricipidian/Ricipidian/Module/AddRecipe/View/AddRecipeViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "208">
+               </Location>
+               <Location
+                  uuid = "018D2F07-35AE-400B-BACE-214D5DB9B0D7 - 6d6cf6947bab5032"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in closure #1 (()) -&gt; () in Ricipidian.AddRecipeViewController.bindViewModel() -&gt; ()"
+                  moduleName = "Ricipidian"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/minhtam/Documents/Ricipidian/Ricipidian/Module/AddRecipe/View/AddRecipeViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "44">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9345DC2C-B617-4EEB-AC0D-403BEE3011E4"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Ricipidian/Module/AddRecipe/View/AddRecipeViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "bindViewModel()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "EAC39531-94FA-4793-BD55-4E1858B881FA"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Ricipidian/CoreLayer/TableViewCommon.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "33"
-            endingLineNumber = "33"
-            landmarkName = "getTitleLabel(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "ADD63757-B27B-42FF-80EE-846FCB32A192"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Ricipidian/Module/AddRecipe/View/CustomCell/AddRecipe2TableViewCell/AddRecipe2TableViewCell.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "21"
-            endingLineNumber = "21"
-            landmarkName = "setupView(viewModel:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "60BAEAD5-2BF2-4BDE-B566-A55FD56320E8"
+            uuid = "34205865-58D7-4551-A307-C74738250EBF"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Ricipidian/Module/AddRecipe/View/CustomTableView/MaterialTableView/MaterialTableViewViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "22"
-            endingLineNumber = "22"
-            landmarkName = "initData()"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "initData(recipe:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

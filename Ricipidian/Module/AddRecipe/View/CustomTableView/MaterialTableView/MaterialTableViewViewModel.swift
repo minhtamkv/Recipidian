@@ -11,18 +11,19 @@ import RxSwift
 
 class MaterialTableViewViewModel: BaseCollectionVM {
     var addRowWhenClickAdd = PublishRelay<Void>()
-    
-    func initData() {
+
+    func initData(recipe: Recipe) {
         resetData()
-        let row1 = MaterialTableViewCellViewModel()
-        addRowWithSection(section: 0, rowViewModel: row1, headerTitle: "Material")
+        for (index, _) in recipe.material.enumerated() {
+            let row1 = MaterialTableViewCellViewModel(index: index, recipe: recipe)
+            addRowWithSection(section: 0, rowViewModel: row1, headerTitle: "Material")
+        }
         let row = AddMaterialTableViewCellViewModel()
         row.didSelectedItem = { [weak self] in
-            let newRow = MaterialTableViewCellViewModel()
-            self?.addRow(rowViewModel: newRow)
+            recipe.material.append("")
             self?.addRowWhenClickAdd.accept(())
         }
-        addRowWithSection(section: 0, rowViewModel: row)
+        addRowWithSection(section: 0, rowViewModel: row, headerTitle: "Material")
 
         updateView()
     }

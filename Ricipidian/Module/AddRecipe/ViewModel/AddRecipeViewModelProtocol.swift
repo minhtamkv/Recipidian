@@ -6,6 +6,9 @@
 //
 
 import Foundation
+import RxCocoa
 
 protocol AddRecipeViewModelProtocol: IBaseCollectionVM, IBaseViewModel {
+    var reloadTableView: PublishRelay<Void> { get set }
+    var newRecipe: Recipe? { get set }
 }

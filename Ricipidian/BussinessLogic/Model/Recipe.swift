@@ -14,13 +14,13 @@ import RealmSwift
     }
 
     dynamic var id: String
-    dynamic var image: [String]
+    dynamic var image: List<String>
     dynamic var name: String
-    dynamic var step: [String]
+    dynamic var step: List<String>
     dynamic var createDate: Int64
-    dynamic var material: [String]
+    dynamic var material: List<String>
     dynamic var foodDescription: String
-    dynamic var updateDate: [Int64]
+    dynamic var updateDate: List<Int64>
 
     override class func primaryKey() -> String? {
         return Recipe.Property.id.rawValue
@@ -28,12 +28,12 @@ import RealmSwift
 
     override init() {
         id = UUID().uuidString
-        image = []
+        image = List<String>()
         name = ""
-        step = []
+        step = List<String>()
         createDate = 0
-        material = []
+        material = List<String>()
         foodDescription = ""
-        updateDate = []
+        updateDate = List<Int64>()
     }
 }

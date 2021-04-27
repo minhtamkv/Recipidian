@@ -18,7 +18,10 @@ class AddRecipe2TableViewCell: BaseTableViewCell {
         cellViewModel = viewModel as? AddRecipe2TableViewCellViewModel
         guard let cvm = cellViewModel else { return }
         materialTableView.setViewModel(viewModel: cvm.materialTableViewViewModel)
-        cvm.materialTableViewViewModel.initData()
+        cvm.materialTableViewViewModel.initData(recipe: cvm.recipe)
+        cvm.materialTableViewViewModel.addRowWhenClickAdd.subscribeShort { [weak self] _ in
+            cvm.reloadTableView.accept(())
+        }.disposed(by: disposeBag)
     }
 
     override func systemLayoutSizeFitting(_ targetSize: CGSize, withHorizontalFittingPriority horizontalFittingPriority: UILayoutPriority, verticalFittingPriority: UILayoutPriority) -> CGSize {

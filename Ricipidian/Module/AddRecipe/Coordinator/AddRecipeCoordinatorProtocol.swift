@@ -8,4 +8,5 @@
 import Foundation
 
 protocol AddRecipeCoordinatorProtocol: Coordinator {
+    var newRecipe: Recipe? { get set }
 }

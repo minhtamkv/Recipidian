@@ -8,4 +8,11 @@
 import Foundation
 
 class MaterialTableViewCellViewModel: RowViewModel {
+    var index: Int
+    var recipe: Recipe
+    
+    init(index: Int, recipe: Recipe) {
+        self.index = index
+        self.recipe = recipe
+    }
 }

@@ -16,5 +16,6 @@ class AddMaterialTableViewCell: BaseTableViewCell {
     override func setupView(viewModel: RowViewModel) {
         cellViewModel = viewModel as? AddMaterialTableViewCellViewModel
         guard let cvm = cellViewModel else { return }
+        
     }
 }
