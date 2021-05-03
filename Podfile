@@ -15,6 +15,7 @@ target 'Ricipidian' do
   pod 'IQKeyboardManagerSwift'
   pod 'MaterialComponents/TextControls+FilledTextFields'
   pod 'MaterialComponents/TextControls+FilledTextAreas'
+  pod 'NotificationBannerSwift', '~> 3.0.0'
   # Pods for Ricipidian
 
   target 'RicipidianTests' do

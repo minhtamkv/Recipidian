@@ -10,18 +10,16 @@ import UIKit
 
 class AddRecipeTableView: TableViewCommon {
     override func registerCell() {
-        registerTableViewCell(cellListName: [AddRecipe1TableViewCell.identifier, AddRecipe2TableViewCell.identifier, AddRecipe3TableViewCell.identifier])
+        registerTableViewCell(cellListName: [AddRecipe1TableViewCell.identifier])
     }
 
     override func cellIdentifier(for viewModel: RowViewModel) -> String {
-        switch viewModel {
-        case is AddRecipe1TableViewCellViewModel:
-            return AddRecipe1TableViewCell.identifier
-        case is AddRecipe2TableViewCellViewModel:
-            return AddRecipe2TableViewCell.identifier
-        default:
-            return AddRecipe3TableViewCell.identifier
-        }
+        return AddRecipe1TableViewCell.identifier
+    }
+    
+    override func setupTableView() {
+        super.setupTableView()
+        backgroundColor = UIColor(hexString: "292929")
     }
 
     override func heightHeaderSection() -> CGFloat {

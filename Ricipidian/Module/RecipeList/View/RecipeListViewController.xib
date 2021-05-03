@@ -6,7 +6,6 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -44,13 +43,30 @@
                                 <constraint firstAttribute="width" constant="20" id="ncd-iR-msu"/>
                             </constraints>
                         </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Rk-lL-nth">
+                            <rect key="frame" x="358" y="10" width="40" height="40"/>
+                            <color key="backgroundColor" name="AccentColor"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="fp9-AJ-o4k"/>
+                                <constraint firstAttribute="height" constant="40" id="fsc-Pg-4Wb"/>
+                            </constraints>
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <state key="normal" image="plus" catalog="system"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="20"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </button>
                     </subviews>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
+                        <constraint firstAttribute="trailing" secondItem="1Rk-lL-nth" secondAttribute="trailing" constant="16" id="3GX-Oz-QpN"/>
                         <constraint firstItem="pcA-cg-T07" firstAttribute="leading" secondItem="ndD-Bd-LmU" secondAttribute="trailing" constant="5" id="Aqp-Cu-PsW"/>
                         <constraint firstAttribute="height" constant="60" id="Fel-St-Pfr"/>
                         <constraint firstItem="hhe-68-Fqp" firstAttribute="centerY" secondItem="pcA-cg-T07" secondAttribute="centerY" id="L0v-J0-Vyv"/>
                         <constraint firstItem="ndD-Bd-LmU" firstAttribute="leading" secondItem="JU9-wf-ApJ" secondAttribute="leading" constant="8" id="Lit-EZ-nZO"/>
+                        <constraint firstItem="1Rk-lL-nth" firstAttribute="centerY" secondItem="JU9-wf-ApJ" secondAttribute="centerY" id="N2L-NL-TzX"/>
                         <constraint firstItem="ndD-Bd-LmU" firstAttribute="centerY" secondItem="JU9-wf-ApJ" secondAttribute="centerY" id="m1W-g9-Rzy"/>
                         <constraint firstItem="hhe-68-Fqp" firstAttribute="leading" secondItem="pcA-cg-T07" secondAttribute="trailing" constant="5" id="weX-it-8qA"/>
                         <constraint firstItem="pcA-cg-T07" firstAttribute="centerY" secondItem="JU9-wf-ApJ" secondAttribute="centerY" id="xWo-jZ-7ep"/>
@@ -58,26 +74,11 @@
                 </view>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="KdC-Id-EOD" customClass="RecipeListTableView" customModule="Ricipidian" customModuleProvider="target">
                     <rect key="frame" x="0.0" y="104" width="414" height="758"/>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <color key="backgroundColor" red="0.16078431372549018" green="0.16078431372549018" blue="0.16078431372549018" alpha="1" colorSpace="calibratedRGB"/>
                 </tableView>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Rk-lL-nth">
-                    <rect key="frame" x="358" y="806" width="40" height="40"/>
-                    <color key="backgroundColor" name="AccentColor"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="40" id="fp9-AJ-o4k"/>
-                        <constraint firstAttribute="height" constant="40" id="fsc-Pg-4Wb"/>
-                    </constraints>
-                    <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                    <state key="normal" image="plus" catalog="system"/>
-                    <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                            <real key="value" value="20"/>
-                        </userDefinedRuntimeAttribute>
-                    </userDefinedRuntimeAttributes>
-                </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <color key="backgroundColor" red="0.20392156862745098" green="0.20392156862745098" blue="0.20392156862745098" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
                 <constraint firstItem="KdC-Id-EOD" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="4M4-tS-yuS"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="JU9-wf-ApJ" secondAttribute="trailing" id="8do-H4-sXx"/>
@@ -85,9 +86,7 @@
                 <constraint firstItem="KdC-Id-EOD" firstAttribute="top" secondItem="JU9-wf-ApJ" secondAttribute="bottom" id="esp-iJ-RSX"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="KdC-Id-EOD" secondAttribute="trailing" id="ieW-9p-eWl"/>
                 <constraint firstItem="JU9-wf-ApJ" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="r7J-OB-bXj"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="1Rk-lL-nth" secondAttribute="bottom" constant="16" id="wO5-Ox-0rM"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="KdC-Id-EOD" secondAttribute="bottom" id="wzJ-xZ-gFB"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="1Rk-lL-nth" secondAttribute="trailing" constant="16" id="x8B-vX-VX1"/>
             </constraints>
             <point key="canvasLocation" x="122" y="129"/>
         </view>
@@ -99,8 +98,5 @@
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
     </resources>
 </document>

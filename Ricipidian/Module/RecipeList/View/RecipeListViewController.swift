@@ -18,6 +18,11 @@ class RecipeListViewController: BaseViewController {
         super.viewDidLoad()
         viewModel.viewDidLoad.accept(())
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        viewModel.viewDidLoad.accept(())
+    }
 
     override func setupView() {
         super.setupView()

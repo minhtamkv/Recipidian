@@ -11,6 +11,7 @@ import UIKit
 
 class AddRecipeCoordinator: BaseCoordinator, AddRecipeCoordinatorProtocol {
     var newRecipe: Recipe?
+    var nav: UINavigationController?
     
     override func start() {
         let viewController = AddRecipeViewController()
@@ -18,9 +19,22 @@ class AddRecipeCoordinator: BaseCoordinator, AddRecipeCoordinatorProtocol {
         let viewModel: AddRecipeViewModelProtocol = AddRecipeViewModel(coordinator: self)
         viewController.viewModel = viewModel
         viewModel.newRecipe = newRecipe
-        navigation.present(viewController, animated: true)
+        nav = UINavigationController(rootViewController: viewController)
+        nav?.modalPresentationStyle = .fullScreen
+        nav?.setNavigationBarHidden(true, animated: true)
+        navigation.present(nav ?? UINavigationController(), animated: true)
+//        navigation.pushViewController(viewController)
     }
 }
 
-extension RecipeListCoordinator {
+extension AddRecipeCoordinator {
+    func dismissAction() {
+        navigation.dismiss(animated: true)
+    }
+    
+    func nextAction() {
+        let coordinator = AddMaterialCoordinator(nav ?? UINavigationController())
+        coordinator.newRecipe = newRecipe
+        coordinate(to: coordinator)
+    }
 }

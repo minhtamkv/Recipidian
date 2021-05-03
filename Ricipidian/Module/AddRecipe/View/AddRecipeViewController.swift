@@ -10,7 +10,9 @@ import RxSwift
 import UIKit
 
 class AddRecipeViewController: BaseViewController {
+    @IBOutlet var btDismiss: UIButton!
     @IBOutlet var tableView: AddRecipeTableView!
+    @IBOutlet weak var btNext: UIButton!
     var viewModel: AddRecipeViewModelProtocol!
 
     override func viewDidLoad() {
@@ -26,10 +28,13 @@ class AddRecipeViewController: BaseViewController {
     override func bindViewModel() {
         subscribeCommon(viewModel: viewModel)
         viewModel.reloadTableView.subscribeShort { [weak self] _ in
-            DispatchQueue.main.async {
-                self?.viewModel.viewDidLoad.accept(())
-                self?.tableView.reloadData()
-            }
+            self?.tableView.reloadData()
         }.disposed(by: disposeBag)
+    }
+    
+    override func bindViews() {
+        super.bindViews()
+        btDismiss.bindToWithTapAction(viewModel.dismissAction).disposed(by: disposeBag)
+        btNext.bindToWithTapAction(viewModel.nextAction).disposed(by: disposeBag)
     }
 }

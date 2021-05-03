@@ -32,13 +32,13 @@ class CustomTextFieldView: UIView {
 
     override func layoutSubviews() {
         super.layoutSubviews()
-        backgroundColor = .gray
+        backgroundColor = .clear
     }
 
     private func setupInputView() {
         if let _ = viewWithTag(1) { return }
         textInput = MDCFilledTextField()
-        textInput.height = 30
+        textInput.height = 20
         tag = 1
         textInput.tag = 1
         textInput.translatesAutoresizingMaskIntoConstraints = false
@@ -46,12 +46,27 @@ class CustomTextFieldView: UIView {
         textInput.sizeToFit()
         textInput.placeholder = placeholder
         textInput.label.text = placeholder
-        textInput.setNormalLabelColor(.gray, for: .normal)
-        textInput.setUnderlineColor(.gray, for: .normal)
-        textInput.setUnderlineColor(.gray, for: .editing)
+        textInput.label.textColor = .white
+        textInput.setFilledBackgroundColor( .clear, for: .normal)
+        textInput.setFilledBackgroundColor( .clear, for: .disabled)
+        textInput.setFilledBackgroundColor( .clear, for: .editing)
+        textInput.setNormalLabelColor(.white, for: .normal)
+        textInput.setNormalLabelColor(.white, for: .editing)
+        textInput.setNormalLabelColor(.white, for: .disabled)
+        textInput.setUnderlineColor(.white, for: .normal)
+        textInput.setUnderlineColor(.white, for: .editing)
+        textInput.setFloatingLabelColor(.white, for: .editing)
+        textInput.setFloatingLabelColor(.white, for: .normal)
+        textInput.setFloatingLabelColor(.white, for: .disabled)
+        textInput.setTextColor(.white, for: .editing)
+        textInput.setTextColor(.white, for: .normal)
+        textInput.setTextColor(.white, for: .disabled)
+        
+        textInput.textColor = .white
+        textInput.backgroundColor = .clear
         textInput.isSecureTextEntry = isSecurity
         textInput.clearButtonMode = .whileEditing
-        textInput.textColor = UIColor(hexString: "1A1E1F") ?? UIColor.black
+        textInput.textColor = .white//UIColor(hexString: "1A1E1F") ?? UIColor.black
 
         addSubview(textInput)
 

@@ -108,7 +108,8 @@ class BaseViewController: UIViewController, IBaseViewController {
         viewModel.showMessageError.subscribeShort { _ in
         }.disposed(by: disposeBag)
 
-        viewModel.showMessageValidate.subscribeShort { _ in
+        viewModel.showMessageValidate.subscribeShort { message in
+            AlertMessage.showMessage(title: "Thông báo", subtitle: message, bannerStyle: .info)
         }.disposed(by: disposeBag)
     }
 }

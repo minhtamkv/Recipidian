@@ -6,7 +6,10 @@
 //
 
 import Foundation
+import RxCocoa
 
 protocol AddRecipeCoordinatorProtocol: Coordinator {
     var newRecipe: Recipe? { get set }
+    func dismissAction()
+    func nextAction()
 }

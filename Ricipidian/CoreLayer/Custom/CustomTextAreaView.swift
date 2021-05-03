@@ -32,7 +32,7 @@ class CustomTextAreaView: UIView {
 
     override func layoutSubviews() {
         super.layoutSubviews()
-        backgroundColor = .gray
+        backgroundColor = .clear
     }
 
     private func setupInputView() {
@@ -46,10 +46,24 @@ class CustomTextAreaView: UIView {
         textInput.textView.delegate = self
         textInput.placeholder = placeholder
         textInput.label.text = placeholder
-        textInput.setNormalLabel(.gray, for: .normal)
-        textInput.setUnderlineColor(.gray, for: .normal)
-        textInput.setUnderlineColor(.gray, for: .editing)
+        textInput.label.textColor = .white
+        textInput.setFilledBackgroundColor( .clear, for: .normal)
+        textInput.setFilledBackgroundColor( .clear, for: .disabled)
+        textInput.setFilledBackgroundColor( .clear, for: .editing)
+        textInput.setNormalLabel(.white, for: .normal)
+        textInput.setNormalLabel(.white, for: .editing)
+        textInput.setNormalLabel(.white, for: .disabled)
+        textInput.setUnderlineColor(.white, for: .normal)
+        textInput.setUnderlineColor(.white, for: .editing)
+        textInput.setFloatingLabel(.white, for: .editing)
+        textInput.setFloatingLabel(.white, for: .normal)
+        textInput.setFloatingLabel(.white, for: .disabled)
+        textInput.setTextColor(.white, for: .editing)
+        textInput.setTextColor(.white, for: .normal)
+        textInput.setTextColor(.white, for: .disabled)
+        
         textInput.maximumNumberOfVisibleRows = 3
+        textInput.backgroundColor = .clear
 //        textInput.textView.clearButtonMode = .whileEditing
         textInput.textView.textColor = UIColor(hexString: "1A1E1F") ?? UIColor.black
 

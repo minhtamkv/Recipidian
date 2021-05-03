@@ -16,5 +16,6 @@ class RecipeListTableViewCell: BaseTableViewCell {
     override func setupView(viewModel: RowViewModel) {
         cellViewModel = viewModel as? RecipeListTableViewCellViewModel
         guard let cvm = cellViewModel else { return }
+        contentView.backgroundColor = .clear
     }
 }

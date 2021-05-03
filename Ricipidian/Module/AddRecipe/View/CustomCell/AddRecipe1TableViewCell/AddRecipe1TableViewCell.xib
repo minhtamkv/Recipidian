@@ -50,6 +50,7 @@
                         </subviews>
                     </stackView>
                 </subviews>
+                <color key="backgroundColor" red="0.16078431372549018" green="0.16078431372549018" blue="0.16078431372549018" alpha="1" colorSpace="calibratedRGB"/>
                 <constraints>
                     <constraint firstItem="2JI-6x-ETU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="0us-Z1-HUv"/>
                     <constraint firstItem="khb-Mf-KFe" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="Tlt-IV-m31"/>
@@ -60,6 +61,10 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="ctfvDesciption" destination="ITB-By-95e" id="42v-oP-eYX"/>
+                <outlet property="ctfvRecipeName" destination="wci-4g-blS" id="her-Iv-Kl7"/>
+            </connections>
             <point key="canvasLocation" x="432.60869565217394" y="295.3125"/>
         </tableViewCell>
     </objects>
