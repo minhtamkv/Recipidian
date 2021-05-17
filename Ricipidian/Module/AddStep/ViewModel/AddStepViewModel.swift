@@ -1,21 +1,21 @@
 //
-//  AddMaterialViewModel.swift
+//  AddStepViewModel.swift
 //  Ricipidian
 //
-//  Created by Minh Tâm on 03/05/2021.
+//  Created by Minh Tâm on 04/05/2021.
 //
 
 import RealmSwift
 import RxCocoa
 
-class AddMaterialViewModel: BaseCollectionVM, AddMaterialViewModelProtocol {
+class AddStepViewModel: BaseCollectionVM, AddStepViewModelProtocol {
     var reloadTableView: PublishRelay<Void>
     var newRecipe: Recipe?
     var dismissAction: PublishRelay<Void>
     var nextAction: PublishRelay<Void>
-    private let coordinator: AddMaterialCoordinatorProtocol
+    private let coordinator: AddStepCoordinatorProtocol
 
-    init(coordinator: AddMaterialCoordinatorProtocol) {
+    init(coordinator: AddStepCoordinatorProtocol) {
         reloadTableView = PublishRelay<Void>()
         dismissAction = PublishRelay<Void>()
         nextAction = PublishRelay<Void>()
@@ -41,30 +41,35 @@ class AddMaterialViewModel: BaseCollectionVM, AddMaterialViewModelProtocol {
                 return
             }
 
+            let realm = try! Realm()
+
+            try! realm.write {
+                realm.add(self?.newRecipe ?? Recipe())
+            }
             self?.coordinator.nextAction()
         }.disposed(by: disposeBag)
     }
 
     func initData() {
         resetData()
-        guard let material = newRecipe?.material else {
+        guard let step = newRecipe?.step else {
             return
         }
-        for (index, _) in material.enumerated() {
-            let row = AddMaterialTableViewCellViewModel(index: index, newRecipe: newRecipe ?? Recipe())
-            row.deleteMaterialAction.subscribeShort { [weak self] _ in
-                self?.newRecipe?.material.remove(at: index)
+        for (index, _) in step.enumerated() {
+            let row = AddStepTableViewCellViewModel(index: index, newRecipe: newRecipe ?? Recipe())
+            row.deleteSteplAction.subscribeShort { [weak self] _ in
+                self?.newRecipe?.step.remove(at: index)
                 self?.reloadTableView.accept(())
             }.disposed(by: disposeBag)
             addRow(rowViewModel: row)
         }
 
-        let row = AddMaterialButtonTableViewCellViewModel()
-        row.addMaterialAction.subscribeShort { [weak self] _ in
+        let row = AddStepButtonTableViewCellViewModel()
+        row.addStepAction.subscribeShort { [weak self] _ in
             if !(self?.validate() ?? false) {
                 return
             }
-            self?.newRecipe?.material.append("")
+            self?.newRecipe?.step.append("")
             self?.reloadTableView.accept(())
         }.disposed(by: disposeBag)
         addRow(rowViewModel: row)
@@ -72,8 +77,8 @@ class AddMaterialViewModel: BaseCollectionVM, AddMaterialViewModelProtocol {
     }
 
     func validate() -> Bool {
-        if newRecipe?.material.count != 0 && newRecipe?.material.last?.trimmed == "" {
-            showMessageValidate.accept("You have to type your material")
+        if newRecipe?.material.count != 0 && newRecipe?.step.last?.trimmed == "" {
+            showMessageValidate.accept("You have to type your step")
 
             return false
         }

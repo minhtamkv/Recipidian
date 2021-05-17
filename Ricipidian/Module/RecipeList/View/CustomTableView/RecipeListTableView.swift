@@ -11,9 +11,8 @@ import UIKit
 class RecipeListTableView: TableViewCommon {
     override func setupTableView() {
         super.setupTableView()
-        configSelectionStyle(selectionStyle: .none, separatorStyle: .singleLine)
+        configSelectionStyle(selectionStyle: .none, separatorStyle: .none)
         backgroundColor = UIColor(hexString: "292929")
-        separatorColor = .white
     }
 
     override func registerCell() {

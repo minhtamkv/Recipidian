@@ -13,7 +13,11 @@
             <connections>
                 <outlet property="btDismiss" destination="yzB-2C-Kdn" id="eel-df-ZfC"/>
                 <outlet property="btNext" destination="jTk-jW-TBz" id="Zuy-gA-IC4"/>
+                <outlet property="cancelButton" destination="MJh-8G-Mbp" id="kwo-4k-HZD"/>
+                <outlet property="datePicker" destination="5cK-lM-qdA" id="Pyb-YM-YMn"/>
+                <outlet property="doneButton" destination="C0i-6w-RPh" id="1Vq-3J-tOa"/>
                 <outlet property="tableView" destination="0FW-B9-mCF" id="MJj-od-0Ui"/>
+                <outlet property="toolBar" destination="rHd-vs-E82" id="hdR-Hw-KIb"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -93,20 +97,43 @@
                     <rect key="frame" x="0.0" y="105" width="414" height="757"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </tableView>
+                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" style="wheels" translatesAutoresizingMaskIntoConstraints="NO" id="5cK-lM-qdA">
+                    <rect key="frame" x="0.0" y="646" width="414" height="216"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="216" id="LsQ-Pt-j8e"/>
+                    </constraints>
+                </datePicker>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rHd-vs-E82">
+                    <rect key="frame" x="0.0" y="602" width="414" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="GTu-o4-NKz"/>
+                    </constraints>
+                    <items>
+                        <barButtonItem title="Cancel" id="MJh-8G-Mbp"/>
+                        <barButtonItem systemItem="flexibleSpace" id="cZ4-vy-VZO"/>
+                        <barButtonItem systemItem="done" id="C0i-6w-RPh"/>
+                    </items>
+                </toolbar>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="QMh-Mx-pug" firstAttribute="top" secondItem="5ck-WH-P7s" secondAttribute="bottom" id="2K4-WJ-pdT"/>
+                <constraint firstItem="5cK-lM-qdA" firstAttribute="top" secondItem="rHd-vs-E82" secondAttribute="bottom" id="5tT-DX-VTc"/>
                 <constraint firstItem="5ck-WH-P7s" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="BB6-PL-ZTW"/>
+                <constraint firstItem="5cK-lM-qdA" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="BwO-3m-xe9"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="0FW-B9-mCF" secondAttribute="trailing" id="Gtr-Hv-TGh"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="0FW-B9-mCF" secondAttribute="bottom" id="J73-pC-yee"/>
+                <constraint firstItem="rHd-vs-E82" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Kvx-Sb-Ky3"/>
                 <constraint firstItem="0FW-B9-mCF" firstAttribute="top" secondItem="QMh-Mx-pug" secondAttribute="bottom" id="O4t-Z7-Wvo"/>
                 <constraint firstItem="QMh-Mx-pug" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="UXs-ml-HZT"/>
                 <constraint firstItem="5ck-WH-P7s" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="WC2-6I-bVW"/>
+                <constraint firstItem="rHd-vs-E82" firstAttribute="trailing" secondItem="i5M-Pr-FkT" secondAttribute="trailing" id="Ytu-2Q-q3d"/>
+                <constraint firstItem="5cK-lM-qdA" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="cpv-KX-wdO"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="5ck-WH-P7s" secondAttribute="trailing" id="hj7-bC-H84"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="QMh-Mx-pug" secondAttribute="trailing" id="nP9-yV-dtM"/>
                 <constraint firstItem="0FW-B9-mCF" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="w67-2b-KTv"/>
+                <constraint firstItem="5cK-lM-qdA" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="wbP-1J-VRG"/>
             </constraints>
             <point key="canvasLocation" x="38" y="98"/>
         </view>

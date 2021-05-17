@@ -33,7 +33,7 @@ class RecipeListViewModelViewModel: BaseCollectionVM, RecipeListViewModelProtoco
     func initData(_ arr: [Recipe]) {
         resetData()
         for value in arr {
-            let row = RecipeListTableViewCellViewModel()
+            let row = RecipeListTableViewCellViewModel(recipe: value)
             addRow(rowViewModel: row)
         }
         updateView()

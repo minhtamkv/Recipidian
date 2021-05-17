@@ -8,4 +8,9 @@
 import Foundation
 
 class RecipeListTableViewCellViewModel: RowViewModel {
+    var recipe: Recipe
+    
+    init(recipe: Recipe) {
+        self.recipe = recipe
+    }
 }

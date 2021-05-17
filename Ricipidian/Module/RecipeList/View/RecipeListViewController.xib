@@ -78,7 +78,7 @@
                 </tableView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <color key="backgroundColor" red="0.20392156862745098" green="0.20392156862745098" blue="0.20392156862745098" alpha="1" colorSpace="calibratedRGB"/>
+            <color key="backgroundColor" red="0.16078431372549018" green="0.16078431372549018" blue="0.16078431372549018" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
                 <constraint firstItem="KdC-Id-EOD" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="4M4-tS-yuS"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="JU9-wf-ApJ" secondAttribute="trailing" id="8do-H4-sXx"/>

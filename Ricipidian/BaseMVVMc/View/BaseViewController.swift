@@ -22,7 +22,6 @@ class BaseViewController: UIViewController, IBaseViewController {
 
     let disposeBag = DisposeBag()
     var dismisAction: PublishRelay<Void> = PublishRelay<Void>()
-
     // MARK: - int + override
 
     override func viewDidLoad() {

@@ -13,12 +13,14 @@ class AddRecipeViewModel: BaseCollectionVM, AddRecipeViewModelProtocol {
     var newRecipe: Recipe?
     var dismissAction: PublishRelay<Void>
     var nextAction: PublishRelay<Void>
+    var showTotalTime: PublishRelay<Void>
     private let coordinator: AddRecipeCoordinatorProtocol
 
     init(coordinator: AddRecipeCoordinatorProtocol) {
         reloadTableView = PublishRelay<Void>()
         dismissAction = PublishRelay<Void>()
         nextAction = PublishRelay<Void>()
+        showTotalTime = PublishRelay<Void>()
         self.coordinator = coordinator
         super.init()
     }
@@ -49,6 +51,13 @@ class AddRecipeViewModel: BaseCollectionVM, AddRecipeViewModelProtocol {
         resetData()
         let row1 = AddRecipe1TableViewCellViewModel(newRecipe: newRecipe ?? Recipe())
         addRow(rowViewModel: row1)
+        
+        let row2 = TotalTimeTableViewCellViewModel(newRecipe: newRecipe ?? Recipe())
+        row2.showTotalTime.subscribeShort { [weak self] _ in
+            self?.showTotalTime.accept(())
+            self?.reloadTableView.accept(())
+        }.disposed(by: disposeBag)
+        addRow(rowViewModel: row2)
         updateView()
     }
     

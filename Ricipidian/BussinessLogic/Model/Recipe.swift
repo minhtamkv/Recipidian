@@ -21,6 +21,7 @@ import RealmSwift
     dynamic var material: List<String>
     dynamic var foodDescription: String
     dynamic var updateDate: List<Int64>
+    dynamic var totalTime: Int?
 
     override class func primaryKey() -> String? {
         return Recipe.Property.id.rawValue
@@ -35,5 +36,6 @@ import RealmSwift
         material = List<String>()
         foodDescription = ""
         updateDate = List<Int64>()
+        totalTime = nil
     }
 }
